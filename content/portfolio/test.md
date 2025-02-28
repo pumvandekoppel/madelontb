@@ -1,6 +1,6 @@
 ---
 titel: test
-date: "2025"
+date: "01-01-2025"
 medium: test
 description: test
 ---
