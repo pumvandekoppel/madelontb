@@ -5,7 +5,7 @@ media_folder: static/img
 public_folder: /img
 collections:
   - name: 'Madelon ter Borg'
-    label: 'portfolio'
+    label: 'Work'
     folder: 'content/portfolio'
     create: true
     slug: '{{titel}}'
