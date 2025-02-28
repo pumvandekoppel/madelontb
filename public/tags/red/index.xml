@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Madelon ter Borg</title>
-    <link>https://example.org/</link>
-    <description>Recent content in Home on Madelon ter Borg</description>
+    <title>Red on Madelon ter Borg</title>
+    <link>https://example.org/tags/red/</link>
+    <description>Recent content in Red on Madelon ter Borg</description>
     <generator>Hugo</generator>
     <language>nl-nl</language>
-    <lastBuildDate>Thu, 20 Feb 2025 02:35:42 +0100</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Over</title>
-      <link>https://example.org/over/</link>
-      <pubDate>Thu, 20 Feb 2025 02:35:42 +0100</pubDate>
-      <guid>https://example.org/over/</guid>
-      <description>Madelon ter Borg groeit op in een omgeving waar ‘Doe normaal, dan doe je gek genoeg’ de norm is. “Ik ben altijd op zoek geweest naar wat dan normaal is, hoe je normaal doet en wie bepaalt wat normaal of afwijkend is.” Ze raakt geïntrigeerd door de niet te definiëren termen: normaal, afwijkend, echt en alsof. Ze verbeeldt haar vragen en gedachten hierover in video, fotografie en installaties. “We leven in een maatschappij waarin prestatie en competitie thema’s zijn.</description>
-    </item>
+    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/red/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post 3</title>
       <link>https://example.org/posts/post-3/</link>
@@ -35,13 +28,6 @@
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
       <guid>https://example.org/posts/post-1/</guid>
       <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&#xA;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://example.org/portfolio/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/portfolio/test/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
