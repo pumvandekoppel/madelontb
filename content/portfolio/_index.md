@@ -1,3 +1,5 @@
+---
+---
 {{ partial "header.html" . }}
     <main>
     {{ .Content }}
