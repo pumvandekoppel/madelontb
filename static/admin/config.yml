@@ -13,7 +13,7 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Jaar', name: 'date', widget: 'datetime', date_format: '2006' }
+      - { label: 'Jaar', name: 'date', widget: 'datetime', date_format: 'YYY' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Omschrijving', name: 'description', widget: 'markdown' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
