@@ -10,10 +10,10 @@ collections:
     create: true
     slug: '{{titel}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Jaar', name: 'date', widget: 'datetime', date_format: 'YYY' }
+      - { label: 'Jaar', name: 'date', widget: 'datetime' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Omschrijving', name: 'description', widget: 'markdown' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
