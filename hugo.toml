@@ -1,5 +1,0 @@
-baseURL = 'https://example.org/'
-languageCode = 'nl-nl'
-title = 'Madelon ter Borg'
-theme = 'simpel'
-pluralizeListTitles = 'false'
