@@ -1,6 +1,6 @@
 ---
 titel: Das Ende des Kapitalismus
-date: "2024"
+date: "01-01-2024"
 medium: installatie met video en audio
 description: Om de aarde te redden moeten we terug naar het consumptieniveau van
   1978. Dat is wat Ulrike Hermann schrijft in haar boek Das Ende des
