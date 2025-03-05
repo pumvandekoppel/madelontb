@@ -1,5 +1,6 @@
 ---
 titel: Das Ende des Kapitalismus
+title: Das Ende des Kapitalismus
 date: 2024-01-01T00:00:00.000Z
 medium: installatie met video en audio
 omschrijving: >-
