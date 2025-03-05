@@ -10,8 +10,10 @@
   <main>
     {{ .Content }}
     <p>yo</p>
-    {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ range (where site.Pages "Section" "portfolio") }}
+    	{{ range .Pages }}
+    	    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    	{{ end }}
     {{ end }}
   </main>
   <footer>
