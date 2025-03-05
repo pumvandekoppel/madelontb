@@ -12,7 +12,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Titel', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'titel', widget: 'string' }
       - { label: 'Jaar', name: 'date', widget: 'datetime' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Omschrijving', name: 'omschrijving', widget: 'markdown' }

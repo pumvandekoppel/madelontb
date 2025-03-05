@@ -1,8 +1,23 @@
-{{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+  <main>
+    {{ .Content }}
+    <p>yo</p>
+    {{ range site.RegularPages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
-{{ end }}
+    {{ end }}
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+<!-- Include the script that builds the page and powers Decap CMS -->
+<!-- script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script-->
+</body>
+</html>
