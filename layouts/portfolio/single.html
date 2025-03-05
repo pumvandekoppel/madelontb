@@ -9,9 +9,7 @@
   </header>
   <main>
   <h1>{{ .Params.titel }}</h1>
-  <h1>{{ .Params.titel }}</h1>
-  <h2>{{ .Params.date.Format "2006" }},&ensp;</h2>
-  <h2>{{ .Params.medium }}</h2>
+  <h3>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h3>
   <p>{{ .Params.omschrijving }}</p>
   </main>
   <footer>
