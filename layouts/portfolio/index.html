@@ -8,7 +8,10 @@
     {{ partial "header.html" . }}
   </header>
   <main>
-    {{ .Content.Portfolio }}
+    {{ .Content }}
+    {{ range site.Portfolio }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ end }}
   </main>
   <footer>
     {{ partial "footer.html" . }}
