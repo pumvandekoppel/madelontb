@@ -1,5 +1,5 @@
 ---
-titel: Das Ende des Kapitalismus
+title: Das Ende des Kapitalismus
 
 date: 2024-01-01T00:00:00.000Z
 # hier het jaartal bij YYYY
