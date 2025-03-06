@@ -14,7 +14,9 @@
 		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
 		<p>{{ .Content }}</p>
 		<br><br>
+		{{ if (not (isset .Params "link")) | or (eq .Params.link "") }}
 		<a href="{{ .Params.link }}">Link</a>
+		{{ end }}
 	</main>
 	<footer>
 		{{ partial "footer.html" . }}
