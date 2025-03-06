@@ -9,7 +9,6 @@ medium:
 link: 
 ####: link is not mandatory
 ---
-<!--- description here below -->
 
 
 
