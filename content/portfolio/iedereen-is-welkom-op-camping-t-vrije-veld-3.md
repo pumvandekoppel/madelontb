@@ -1,5 +1,5 @@
 ---
-title: Iedereen is welkom op camping 'T VRIJE VELD 3
+titel: Iedereen is welkom op camping 'T VRIJE VELD 3
 
 date: 2024-01-01T00:00:00.000Z
 

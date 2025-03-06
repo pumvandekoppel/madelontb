@@ -25,6 +25,6 @@ link:
 
 
   *Je ziet schoonheid, vergankelijkheid en imperfectie. Nemen we daar genoegen mee of zoeken we altijd weer naar nieuw, beter, mooier of perfecter? Wat houdt ons in de greep van (over)consumeren?*
--
+
 
 
