@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
 <head>
-  {{ partial "head.html" . }}
+	{{ partial "head.html" . }}
 </head>
+
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-  <h2>{{ .Params.titel }}</h2>
-  <h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
-  <p>{{ .Params.omschrijving }}</p>
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-<!-- Include the script that builds the page and powers Decap CMS -->
-<!-- script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script-->
+	<header>
+		{{ partial "header.html" . }}
+	</header>
+	<main>
+		<h2>{{ .Params.titel }}</h2>
+		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
+		<p>{{ .Content }}</p>
+		<br><br>
+		<a href="{{ .Params.link }}">Link</a>
+	</main>
+	<footer>
+		{{ partial "footer.html" . }}
+	</footer>
+	<!-- Include the script that builds the page and powers Decap CMS -->
+	<!-- script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script-->
 </body>
+
 </html>

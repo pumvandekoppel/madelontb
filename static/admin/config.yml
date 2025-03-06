@@ -15,5 +15,5 @@ collections:
       - { label: 'Titel', name: 'title', widget: 'string' }
       - { label: 'Jaar', name: 'date', widget: 'datetime' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
-      - { label: 'Omschrijving', name: 'omschrijving', widget: 'markdown' }
+      - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
