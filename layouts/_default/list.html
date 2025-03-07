@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
 <head>
-  {{ partial "head.html" . }}
+	{{ partial "head.html" . }}
 </head>
+
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ .Content }}
-    {{ range (where site.Pages "Section" "portfolio") }}
-    	{{ range .Pages }}
-    	    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    	{{ end }}
-    {{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-<!-- Include the script that builds the page and powers Decap CMS -->
-<!-- script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script-->
+	<header>
+		{{ partial "header.html" . }}
+	</header>
+	<main>
+		{{ .Content }}
+		<ul>
+			{{ range (where site.Pages "Section" "portfolio") }}
+			{{ range .Pages }}
+			<li>
+				<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+			</li>
+			{{ end }}
+			{{ end }}
+		</ul>
+	</main>
+	<footer>
+		{{ partial "footer.html" . }}
+	</footer>
+	<!-- Include the script that builds the page and powers Decap CMS -->
+	<!-- script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script-->
 </body>
+
 </html>
