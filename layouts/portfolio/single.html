@@ -12,6 +12,7 @@
 	<main>
 		<h2>{{ .Params.title }}</h2>
 		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
+		<div>{{/*< img_gallery folder="static/img">*/}}</div>
 		<p>{{ .Content }}</p>
 		<br><br>
 		{{ if (not (isset .Params "link")) | or (eq .Params.link "") }}
