@@ -3,6 +3,23 @@ title: Das Ende des Kapitalismus
 date: 2024-01-01T00:00:00.000Z
 medium: installatie met video en audio
 documentatie: /img/_1020682.jpg
+afbeeldingen:
+  - /img/_1020682.jpg
+  - /img/_1020687.jpg
+  - /img/_1020690.jpg
+  - /img/_1020694.jpg
+  - /img/_1020695.jpg
+  - /img/_1020712.jpg
+  - /img/_1020727.jpg
+  - /img/_1020728.jpg
+  - /img/_1020740.jpg
+  - /img/dsc_6292.jpg
+  - /img/dsc_6297.jpg
+  - /img/dsc_6310.jpg
+  - /img/dsc_6311.jpg
+  - /img/p1020697-2.jpg
+  - /img/p1020705.jpg
+  - /img/photo-2024-09-08-18-04-11.jpg
 link: null
 ---
 <!--- description here below -->
