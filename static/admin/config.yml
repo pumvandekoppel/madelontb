@@ -16,10 +16,8 @@ collections:
       - { label: 'Jaar', name: 'date', widget: 'datetime' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Documentatie', name: 'documentatie', widget: 'list', 
-          fields: [
-            { name: 'afbeelding', label: 'Afbeelding', widget: 'image' }, 
-            { name: 'beschrijving', label: 'Beschrijving', widget: 'string' }
-          ]
+          fields:
+            { name: 'afbeelding', label: 'Afbeelding', widget: 'image' }
       }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
