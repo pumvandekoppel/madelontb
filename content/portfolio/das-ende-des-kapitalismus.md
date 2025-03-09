@@ -1,13 +1,9 @@
 ---
 title: Das Ende des Kapitalismus
-
 date: 2024-01-01T00:00:00.000Z
-# hier het jaartal bij YYYY
-
-medium:  installatie met video en audio
-
-link: 
-####: link is not mandatory
+medium: installatie met video en audio
+documentatie: /img/_1020682.jpg
+link: null
 ---
 <!--- description here below -->
 
