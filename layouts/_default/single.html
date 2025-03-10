@@ -4,6 +4,7 @@
     </header>
     <main>
         <h2>{{ .Title }}</h2>
+        <!--
         {{ with .Resource.ByType "image" }}
             <div class="Image">
             {{ range . }}
@@ -11,6 +12,7 @@
             {{ end }}
             </div>
         {{ end }}
+        -->
         {{ .Content }}
     </main>
 </body>
