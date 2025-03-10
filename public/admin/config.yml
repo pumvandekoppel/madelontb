@@ -23,9 +23,9 @@ collections:
   - name: 'Paginas'
     label: 'paginas'
     folder: '/content'
-    files: 
+    file: 
       label: 'Over'
       name: 'over' 
       file: 'over.md'
-      fields:
+      field:
         - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
