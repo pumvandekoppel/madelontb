@@ -13,56 +13,16 @@
 		<h2>{{ .Params.title }}</h2>
 		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
 
-		<div class="gallery">
 			{{ with .Resources.ByType "image" }}
-			{{ range . }}
-			<a href="{{ .RelPermalink }}" class="gallery-item glightbox" data-gallery="my-gallery">
-				<img src="{{ .RelPermalink }}" alt="{{ .Name | plainify }}"
-					class="img-fluid rounded mb-2" />
-			</a>
-			{{- end }}
+				<div class="Image">
+				{{ range . }}
+					<img src="{{ .RelPermalink }}">
+				{{ end }}
+				</div>
 			{{ end }}
-			<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
+
 		</div>
 
-		<style>
-			/* Masonry layout styling */
-			.gallery {
-				column-count: 3;
-				column-gap: 15px;
-			}
-
-			.gallery-item {
-				display: inline-block;
-				width: 100%;
-				margin-bottom: 15px;
-				break-inside: avoid;
-			}
-
-			.gallery img {
-				width: 100%;
-				height: auto;
-				border-radius: 4px;
-				transition: transform 0.2s ease;
-			}
-
-			.gallery img:hover {
-				transform: scale(1.05);
-			}
-
-			/* Responsive adjustments */
-			@media (max-width: 992px) {
-				.gallery {
-					column-count: 2;
-				}
-			}
-
-			@media (max-width: 576px) {
-				.gallery {
-					column-count: 1;
-				}
-			}
-		</style>
 		<p>{{ .Content }}</p>
 		<br><br>
 		{{ if (not (isset .Params "link")) | or (eq .Params.link "") }}
