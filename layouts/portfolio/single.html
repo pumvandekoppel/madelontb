@@ -15,7 +15,7 @@
 
 		<div class="gallery">
 			{{- $folder := .Get "folder" -}}
-			{{- $images := .Resources.Match (printf "%s/*.{jpg,jpeg,webp,png}") $folder) -}}
+			{{- $images := .Resources.Match (printf "%s/*.{jpg,jpeg,webp,png}" $folder) -}}
 			{{ range $images }}
 			<a href="{{ .RelPermalink }}" class="gallery-item glightbox" data-gallery="my-gallery">
 				<img src="{{ .RelPermalink }}" alt="{{ .Name | plainify }}"
