@@ -7,6 +7,8 @@ collections:
   - name: 'Madelon ter Borg'
     label: 'Portfolio'
     folder: '/content/portfolio'
+    media_folder: ''
+    public_folder: ''
     create: true
     slug: '{{titel}}'
     editor:
@@ -18,3 +20,8 @@ collections:
       - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'afbeelding', widget: 'image'} }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
+  - name: 'Over'
+    label: 'over'
+    file: '/content/over.md'
+    field: 
+  - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
