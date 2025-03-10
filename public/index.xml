@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Madelon ter Borg</title>
-    <link>https://madelonterborg.netlify.app/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Madelon ter Borg</description>
     <generator>Hugo</generator>
     <language>nl-nl</language>
     <lastBuildDate>Tue, 04 Mar 2025 13:37:23 +0100</lastBuildDate>
-    <atom:link href="https://madelonterborg.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Over</title>
-      <link>https://madelonterborg.netlify.app/over/</link>
+      <link>http://localhost:1313/over/</link>
       <pubDate>Tue, 04 Mar 2025 13:37:23 +0100</pubDate>
-      <guid>https://madelonterborg.netlify.app/over/</guid>
+      <guid>http://localhost:1313/over/</guid>
       <description>Madelon ter Borg groeit op in een omgeving waar ‘Doe normaal, dan doe je gek genoeg’ de norm is. “Ik ben altijd op zoek geweest naar wat dan normaal is, hoe je normaal doet en wie bepaalt wat normaal of afwijkend is.” Ze raakt geïntrigeerd door de niet te definiëren termen: normaal, afwijkend, echt en alsof. Ze verbeeldt haar vragen en gedachten hierover in video, fotografie en installaties. “We leven in een maatschappij waarin prestatie en competitie thema’s zijn.</description>
     </item>
     <item>
       <title>Das Ende des Kapitalismus</title>
-      <link>https://madelonterborg.netlify.app/portfolio/das-ende-des-kapitalismus/</link>
+      <link>http://localhost:1313/portfolio/das-ende-des-kapitalismus/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://madelonterborg.netlify.app/portfolio/das-ende-des-kapitalismus/</guid>
+      <guid>http://localhost:1313/portfolio/das-ende-des-kapitalismus/</guid>
       <description>Om de aarde te redden moeten we terug naar het consumptieniveau van 1978. Dat is wat Ulrike Hermann schrijft in haar boek Das Ende des Kapitalismus. Een flinke stap terug, naar ongeveer de helft van wat we nu consumeren in 2024. Kunnen we dat nog?&#xA;Ik vroeg het aan twintig mensen in mijn omgeving. Kun je afstand doen van een voorwerp wat eerst belangrijk of onmisbaar leek maar waar je uiteindelijk toch ook best zonder kan?</description>
     </item>
     <item>
       <title>Iedereen is welkom op camping &#39;T VRIJE VELD 3</title>
-      <link>https://madelonterborg.netlify.app/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-3/</link>
+      <link>http://localhost:1313/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-3/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://madelonterborg.netlify.app/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-3/</guid>
+      <guid>http://localhost:1313/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-3/</guid>
       <description>Voor Theaterfestival Vuurol is Camping &amp;rsquo;t Vrije Veld omgebouwd tot een interactieve installatie. Lopend over de camping luisterden de gasten naar audiofragmenten over vrijheid en gevangenschap. Geconfronteerd met camera toezicht en regels voor het &amp;lsquo;algemeen belang&amp;rsquo;, werden vragen opgeworpen: is het belangrijk dat jij het naar je zin hebt? Of is het belang van het collectief meer leidend? Wat betekent jouw vrijheid voor de ander? Kan je vrijheid überhaupt vasthouden, beetpakken?</description>
     </item>
     <item>
       <title>Iedereen is welkom op camping &#39;T VRIJE VELD 2</title>
-      <link>https://madelonterborg.netlify.app/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-2/</link>
+      <link>http://localhost:1313/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-2/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://madelonterborg.netlify.app/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-2/</guid>
+      <guid>http://localhost:1313/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-2/</guid>
       <description>Kampeerders zeggen dat kamperen hen een gevoel van vrijheid geeft. Toch is kamperen in Nederland aan veel (informele) regels gebonden. Voelen we ons vrij als we &amp;lsquo;onder elkaar&amp;rsquo; zijn, binnen de afgesproken gedragsregels? En wat betekent dat voor de vrijheid van anderen? Nemen we onszelf, onze geschiedenis en problemen, niet gewoon mee naar de camping? Eenmaal thuis laten we vrolijke foto&amp;rsquo;s en vakantie films aan anderen zien. Zijn vakanties altijd zo perfect?</description>
     </item>
     <item>
       <title>Iedereen is welkom op camping het vrije veld 1</title>
-      <link>https://madelonterborg.netlify.app/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-1/</link>
+      <link>http://localhost:1313/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-1/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://madelonterborg.netlify.app/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-1/</guid>
+      <guid>http://localhost:1313/portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-1/</guid>
       <description>Kampeerders zeggen dat kamperen hen een gevoel van vrijheid geeft. Toch is kamperen in Nederland aan veel (informele) regels gebonden. Voelen we ons vrij als we &amp;lsquo;onder elkaar&amp;rsquo; zijn, binnen de afgesproken gedragsregels? En wat betekent dat voor de vrijheid van anderen? Nemen we onszelf, onze geschiedenis en problemen, niet gewoon mee naar de camping? Eenmaal thuis laten we vrolijke foto&amp;rsquo;s en vakantie films aan anderen zien. Zijn vakanties altijd zo perfect?</description>
     </item>
     <item>
       <title>Als niemand het ziet</title>
-      <link>https://madelonterborg.netlify.app/portfolio/als-niemand-het-ziet/</link>
+      <link>http://localhost:1313/portfolio/als-niemand-het-ziet/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://madelonterborg.netlify.app/portfolio/als-niemand-het-ziet/</guid>
+      <guid>http://localhost:1313/portfolio/als-niemand-het-ziet/</guid>
       <description>5 mensen lieten me een van hun dagelijkse rituelen zien, die bijna niemand van dichtbij te zien krijgt. Ze beschreven het in detail. Daarna kroop ik in hun huid. </description>
     </item>
     <item>
       <title>Langs het leven lopen</title>
-      <link>https://madelonterborg.netlify.app/portfolio/langs-het-leven-lopen/</link>
+      <link>http://localhost:1313/portfolio/langs-het-leven-lopen/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://madelonterborg.netlify.app/portfolio/langs-het-leven-lopen/</guid>
+      <guid>http://localhost:1313/portfolio/langs-het-leven-lopen/</guid>
       <description>In deze korte film portretteer ik een oude vrouw die genoeg heeft van het leven. Mensen om haar heen willen dat ze blijft leven. Feit, fictie, kwetsbaarheid en facade wisselen elkaar af.</description>
     </item>
     <item>
       <title>Nena</title>
-      <link>https://madelonterborg.netlify.app/portfolio/nena/</link>
+      <link>http://localhost:1313/portfolio/nena/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://madelonterborg.netlify.app/portfolio/nena/</guid>
+      <guid>http://localhost:1313/portfolio/nena/</guid>
       <description>Installatie: Is Nena in deze installatie een museumstuk of een suppoost? Dat ze een ‘levend’ wezen is met dagelijkse problemen wordt duidelijk op Instagram. Nena on Insta: Mijn vrienden zeggen soms dingen die me bij blijven. Ik heb Nena gebruikt om te onderzoeken wat die woorden kunnen betekenen.</description>
     </item>
     <item>
       <title>Ontmoet mijn buren</title>
-      <link>https://madelonterborg.netlify.app/portfolio/ontmoet-mijn-buren/</link>
+      <link>http://localhost:1313/portfolio/ontmoet-mijn-buren/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://madelonterborg.netlify.app/portfolio/ontmoet-mijn-buren/</guid>
+      <guid>http://localhost:1313/portfolio/ontmoet-mijn-buren/</guid>
       <description>Normaal, afwijkend, gewoon, speciaal. Woorden die niet goed te definiëren zijn, maar die we veel gebruiken. Ontmoet mijn normale, afwijkende, gewone en heel speciale buren.</description>
     </item>
     <item>
       <title>Outside in</title>
-      <link>https://madelonterborg.netlify.app/portfolio/outside-in/</link>
+      <link>http://localhost:1313/portfolio/outside-in/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://madelonterborg.netlify.app/portfolio/outside-in/</guid>
+      <guid>http://localhost:1313/portfolio/outside-in/</guid>
       <description>Outside in laat een voor deze tijd zeer relevant beeld zien. We zien iemand die buiten in de regen naar binnen staat te kijken. Het roep de vraag op wat zij ziet en of dat voor haar ogen bestemd is. Is zij een indringer? We zouden ook kunnen zeggen dat wij kijken naar iemand die buiten in de regen staat. In de huidige maatschappij staan steeds meer mensen buiten in de regen terwijl anderen lekker warm binnen zitten.</description>
     </item>
   </channel>

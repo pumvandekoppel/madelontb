@@ -17,11 +17,11 @@ collections:
       - { label: 'Titel', name: 'title', widget: 'string' }
       - { label: 'Jaar', name: 'date', widget: 'datetime' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
-      - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'afbeelding', widget: 'image'} }
+      - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image'} }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
   - name: 'Over'
     label: 'over'
-    file: '/content/over.md'
+    file: '/content/over.md'7
     field: 
   - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
