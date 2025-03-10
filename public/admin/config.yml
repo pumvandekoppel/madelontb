@@ -22,10 +22,10 @@ collections:
       - { label: 'Link', name: 'link', widget: 'text', required: false }
   - name: 'paginas'
     label: 'Paginas'
-    folder: '/content'
     files: 
-      - file: 'over.md'
+      - file: 'content/over.md'
         label: 'Over'
         name: 'over' 
-        field:
+        fields:
+          - { label: 'Portret', name: 'portret', widget: 'image' }
           - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
