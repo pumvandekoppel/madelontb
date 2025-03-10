@@ -14,12 +14,14 @@
 		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
 
 		<div class="gallery">
-			{{ range resources.ByType "image" }}
+			{{ with .Resources.ByType "image" }}
+			{{ range . }}
 			<a href="{{ .RelPermalink }}" class="gallery-item glightbox" data-gallery="my-gallery">
 				<img src="{{ .RelPermalink }}" alt="{{ .Name | plainify }}"
 					class="img-fluid rounded mb-2" />
 			</a>
 			{{- end }}
+			{{ end }}
 			<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
 		</div>
 
