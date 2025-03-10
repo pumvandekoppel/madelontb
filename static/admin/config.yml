@@ -22,6 +22,6 @@ collections:
       - { label: 'Link', name: 'link', widget: 'text', required: false }
   - name: 'Over'
     label: 'over'
-    file: '/content/over.md'7
+    file: '/content/over.md'
     field: 
   - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
