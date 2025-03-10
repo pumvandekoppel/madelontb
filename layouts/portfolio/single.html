@@ -20,9 +20,7 @@
 		<img src="{{ .RelPermalink }}" alt="{{ .Name | plainify }}" class="img-fluid rounded mb-2" />
 	</a>
 	{{- end }}
-	{{ $path := "_1020728.jpg" }}
-{{ with .Resources.Get $path }}
-  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
+	<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
 {{ else }}
   {{ errorf "Unable to get page resource %q" $path }}
 {{ end }}
