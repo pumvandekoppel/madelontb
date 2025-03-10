@@ -14,13 +14,15 @@
 		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
 
 <div class="gallery">
-{{- $images := .Resources.Match (printf "%s/*.{jpg,jpeg,webp,png}") -}}
+{{- $folder := .Get "folder" -}}
+{{- $images := .Resources.Match (printf "%s/*.{jpg,jpeg,webp,png}") $folder:w
+-}}
 	{{ range $images }}
 	<a href="{{ .RelPermalink }}" class="gallery-item glightbox" data-gallery="my-gallery">
 		<img src="{{ .RelPermalink }}" alt="{{ .Name | plainify }}" class="img-fluid rounded mb-2" />
 	</a>
 	{{- end }}
-	<img src="{{ .RelPermalink }}" width="{{ .RelPermalink.Width }}" height="{{ .RelPermalink.Height }}" alt="">
+	<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
 </div>
 
 <style>
