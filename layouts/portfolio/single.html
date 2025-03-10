@@ -14,7 +14,7 @@
 		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
 
 		<div class="gallery">
-			{{- $folder := .Params.folder -}}
+			{{- $folder := "" -}}
 			{{- $images := .Resources.Match (printf "%s/*.{jpg,jpeg,webp,png}" $folder) -}}
 			{{ range $images }}
 			<a href="{{ .RelPermalink }}" class="gallery-item glightbox" data-gallery="my-gallery">
