@@ -4,16 +4,6 @@
     </header>
     <main>
         <h2>{{ .Title }}</h2>
-        <!--
-        {{ with .Resource.ByType "image" }}
-            <div class="Image">
-            {{ range . }}
-                <img src="{{ .RelPermalink }}">
-            {{ end }}
-            </div>
-        {{ end }}
-        -->
-        over de kunstenaar:
         {{ .Content }}
     </main>
 </body>
