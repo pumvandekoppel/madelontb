@@ -21,9 +21,6 @@
 	</a>
 	{{- end }}
 	<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
-{{ else }}
-  {{ errorf "Unable to get page resource %q" $path }}
-{{ end }}
 </div>
 
 <style>
