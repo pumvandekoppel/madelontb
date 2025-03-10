@@ -20,7 +20,7 @@
 		<img src="{{ .RelPermalink }}" alt="{{ .Name | plainify }}" class="img-fluid rounded mb-2" />
 	</a>
 	{{- end }}
-	<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
+	<img src="{{ .RelPermalink }}" width="{{ .RelPermalink.Width }}" height="{{ .RelPermalink.Height }}" alt="">
 </div>
 
 <style>
