@@ -25,9 +25,9 @@
 
             <p>{{ .Content }}</p>
             <br><br>
-            <!-- {{ if (not (isset .Params "link")) | or (eq .Params.link "") }} -->
+            {{ if not (in .Params.link nil) }}
             <a href="{{ .Params.link }}">Link</a>
-            <!-- { end }} -->
+            { end }}
         </main>
         <footer>
             {{ partial "footer.html" . }}
