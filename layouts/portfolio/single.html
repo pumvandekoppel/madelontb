@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 
-<head>
-	{{ partial "head.html" . }}
-</head>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
 
-<body>
-	<header>
-		{{ partial "header.html" . }}
-	</header>
-	<main>
-		<h2>{{ .Params.title }}</h2>
-		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
+    <body>
+        <header>
+            {{ partial "header.html" . }}
+        </header>
+        <main>
+            <h2>{{ .Params.title }}</h2>
+            <h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
 
-			{{ with .Resources.ByType "image" }}
-				<div class="Image">
-				{{ range . }}
-					<img src="{{ .RelPermalink }}">
-				{{ end }}
-				</div>
-			{{ end }}
+                {{ with .Resources.ByType "image" }}
+                    <div class="Image">
+                    {{ range . }}
+                        <img src="{{ .RelPermalink }}">
+                    {{ end }}
+                    </div>
+                {{ end }}
 
-		</div>
+            </div>
 
-		<p>{{ .Content }}</p>
-		<br><br>
-        <!--{{ if (not (isset .Params "link")) | or (eq .Params.link "") }}-->
-		<a href="{{ .Params.link }}">Link</a>
-        <!--{ end }}-->
-	</main>
-	<footer>
-		{{ partial "footer.html" . }}
-	</footer>
-	<!-- Include the script that builds the page and powers Decap CMS -->
-	<!-- script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script-->
-</body>
+            <p>{{ .Content }}</p>
+            <br><br>
+            <!-- {{ if (not (isset .Params "link")) | or (eq .Params.link "") }} -->
+            <a href="{{ .Params.link }}">Link</a>
+            <!-- { end }} -->
+        </main>
+        <footer>
+            {{ partial "footer.html" . }}
+        </footer>
+        <!-- Include the script that builds the page and powers Decap CMS -->
+        <!-- script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script-->
+    </body>
 
 </html>
