@@ -25,7 +25,7 @@
 
             <p>{{ .Content }}</p>
             <br><br>
-            {{ with .Params.link }}
+            {{ with $.Params.link }}
             <a href="{{ .Params.link }}">Link</a>
             {{ end }}
         </main>
