@@ -20,12 +20,12 @@ collections:
       - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image'} }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
-  - name: 'Paginas'
-    label: 'paginas'
-    folder: '/content'
-    files: 
-      - label: 'Over'
-        name: 'over' 
-        file: 'over.md'
-        fields:
-          - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
+#  - name: 'Paginas'
+#    label: 'paginas'
+#    folder: '/content'
+#    files: 
+#      - label: 'Over'
+#        name: 'over' 
+#        file: 'over.md'
+#        fields:
+#          - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
