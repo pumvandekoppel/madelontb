@@ -25,7 +25,7 @@
 
             <p>{{ .Content }}</p>
             <br><br>
-            {{ if not (in .Params.link nil) }}
+            {{ if not (in .Params.link "") }}
             <a href="{{ .Params.link }}">Link</a>
             {{ end }}
         </main>
