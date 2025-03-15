@@ -4,3 +4,14 @@ title = 'Madelon ter Borg'
 theme = 'simpel'
 contentDir = 'content/'
 pluralizeListTitles = 'false'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = 'static'
+    target = 'assets'

@@ -12,18 +12,10 @@
         <main>
             <h2>{{ .Params.title }}</h2>
             <h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
-
-                {{ with .Resources.ByType "image" }}
-                    <div class="Image">
-                    {{ range . }}
-                        <img src="{{ .RelPermalink }}">
-                    {{ end }}
-                    </div>
-                {{ end }}
-
-            </div>
-
-            <p>{{ .Content }}</p>
+            <div class="gallery">
+                ![Scenario 1: Across columns](/img/dsc_6311.jpg)
+            </div> 
+            <p>{{ .Content }}hoiii</p>
             <br><br>
             {{ with $.Params.link }}
             <a href="{{ $.Params.link }}">Link</a>
