@@ -14,7 +14,7 @@
 ** TODO Hugo [1/3]
 *** DONE layout list
 *** TODO layout portfolio fixen
-**** TODO optionele link weergeven
+**** DONE optionele link weergeven
 **** TODO afbeeldingen weergeven
 *** TODO index in grid weergeven
 
@@ -23,7 +23,8 @@
 *** DONE projecten folder 
 *** TODO about pagina
 
-** TODO Content [1/2]
+** TODO Content [1/3]
 *** DONE tekst erop zetten
 *** TODO afbeeldingen uploaden
 *** TODO clipart op index zetten
+*** TODO account voor Madelon maken
