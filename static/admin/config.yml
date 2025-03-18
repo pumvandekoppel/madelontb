@@ -10,7 +10,8 @@ collections:
     media_folder: ''
     public_folder: ''
     create: true
-    slug: '{{titel}}/index'
+    slug: '{{titel}}'
+    path: '{{titel}}/index'
     editor:
       preview: false
     fields:
