@@ -14,7 +14,9 @@
 		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
 		<div class="gallery">
 			{{ range .Resources.ByType "image" }}
+			{{ with .Resize "95vw" }}
 			<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+			{{ end }}
 			{{ end }}
 		</div>
 		<p>{{ .Content }}hoiii</p>
