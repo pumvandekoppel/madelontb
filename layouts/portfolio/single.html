@@ -10,7 +10,7 @@
 		{{ partial "header.html" . }}
 	</header>
 	<main>
-		<h2>{{ .Params.title }}</h2>
+		<h1>{{ .Params.title }}</h1>
 		<h4>({{ .Params.medium }},&ensp;{{ .Params.date.Format "2006" }})</h4>
 		<div class="gallery">
 			{{ range .Resources.ByType "image" }}

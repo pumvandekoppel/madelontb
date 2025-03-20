@@ -15,7 +15,7 @@
 			{{ range (where site.Pages "Section" "portfolio") }}
 			{{ range .Pages }}
 			<li>
-				<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+				<h1><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h1>
 			</li>
 			{{ end }}
 			{{ end }}
