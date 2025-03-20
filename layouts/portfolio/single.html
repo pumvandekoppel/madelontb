@@ -14,12 +14,12 @@
 		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
 		<div class="gallery">
 			{{ range .Resources.ByType "image" }}
-			{{ with .Resize "95vw" }}
+			{{ with .Resize "600px" }}
 			<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 			{{ end }}
 			{{ end }}
 		</div>
-		<p>{{ .Content }}hoiii</p>
+		<p>{{ .Content }}</p>
 		<br><br>
 		{{ with $.Params.link }}
 		<a href="{{ $.Params.link }}">Link</a>
