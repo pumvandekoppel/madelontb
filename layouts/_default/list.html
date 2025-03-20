@@ -12,12 +12,10 @@
 	<main>
 		{{ .Content }}
 		<ul>
-			{{ range (where site.Pages "Section" "portfolio") }}
-			{{ range .Pages }}
+			{{ range .Resources.ByType "page" }}
 			<li>
 				<h1><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h1>
 			</li>
-			{{ end }}
 			{{ end }}
 		</ul>
 	</main>
