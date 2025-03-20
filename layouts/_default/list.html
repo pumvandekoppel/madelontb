@@ -11,8 +11,9 @@
 	</header>
 	<main>
 		{{ .Content }}
+		{{ range $section, $taxonomy := .Site.Sections }}
 		<ul>
-			{{ range Portfolio.Resources.ByType "page" }}
+			{{ range $taxonomy.Pages }}
 			<li>
 				<h1><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h1>
 			</li>
