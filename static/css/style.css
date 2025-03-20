@@ -61,7 +61,7 @@
 
 body {
 	color: #222;
-	font-family: RobotoMono-Regular;
+	font-family: Velvelyne;
 	line-height: 1.5;
 	margin: 0;
 	max-width: 95vw;
@@ -144,9 +144,20 @@ nav>a {
 	padding: 16px;
 }
 
+/*h1,*/
+/*h2,*/
+/*h4,*/
+/*nav>a {*/
+/*	font-family: Velvelyne;*/
+/*}*/
+
 h1,
-h2 {
-	font-family: Velvelyne;
+nav>a {
+	font-family: Velvelyne-Bold;
+}
+
+h4 {
+	font-family: RobotoMono-Regular;
 }
 
 footer {
