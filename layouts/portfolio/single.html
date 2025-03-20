@@ -11,7 +11,7 @@
 	</header>
 	<main>
 		<h2>{{ .Params.title }}</h2>
-		<h4>({{ .Params.date.Format "2006" }},&ensp;{{ .Params.medium }})</h4>
+		<h4>({{ .Params.medium }},&ensp;{{ .Params.date.Format "2006" }})</h4>
 		<div class="gallery">
 			{{ range .Resources.ByType "image" }}
 			{{ with .Resize "600x" }}
