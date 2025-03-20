@@ -153,11 +153,13 @@ nav>a {
 
 h1,
 nav>a {
-	font-family: Velvelyne-Bold;
+	font-family: Velvelyne;
+	font-weight: 700;
 }
 
-h4 {
-	font-family: RobotoMono-Regular;
+h4,
+p {
+	font-family: "Roboto Mono";
 }
 
 footer {
