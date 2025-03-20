@@ -97,7 +97,6 @@ footer span {
 	vertical-align: middle;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -113,6 +112,10 @@ blockquote {
 a {
 	color: #00e;
 	text-decoration: none;
+}
+
+li a {
+	vertical-align: middle;
 }
 
 /* custom */
