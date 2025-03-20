@@ -12,7 +12,7 @@
 	<main>
 		{{ .Content }}
 		<ul>
-			{{ $portfolio = 'portfolio' }}
+			{{ $portfolio = "portfolio" }}
 			{{ range $portfolio.Resources.ByType "page" }}
 			<li>
 				<h1><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h1>
