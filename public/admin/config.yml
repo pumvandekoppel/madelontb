@@ -7,8 +7,8 @@ collections:
   - name: 'Madelon ter Borg'
     label: 'Portfolio'
     folder: '/content/portfolio/'
-    media_folder: ''
-    public_folder: ''
+    media_folder: '/content/portfolio/{{title}}'
+    public_folder: '/portfolio/{{title}}'
     create: true
     slug: '{{title}}'
     path: '{{title}}/index'
