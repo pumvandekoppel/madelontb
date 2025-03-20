@@ -11,9 +11,9 @@
 	</header>
 	<main>
 		{{ .Content }}
-		{{ range $section, $taxonomy := .Site.Sections }}
+		{{ range (where .Site.Pages "Section" "portfolio") }}
 		<ul>
-			{{ range $taxonomy.Pages }}
+			{{ range .Pages }}
 			<li>
 				<h1><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h1>
 			</li>
