@@ -1,9 +1,9 @@
-+++
-title = 'Over'
-date = 2025-03-04T13:37:23+01:00
-draft = false
-+++
-
+---
+title: Over
+date: 2025-03-04T12:37:23.000Z
+draft: false
+image: f07505ec-51a7-4a0b-9e27-790128a5d41b.jpg
+---
 Madelon ter Borg groeit op in een omgeving waar ‘Doe normaal, dan doe je gek genoeg’ de norm is. \
 “Ik ben altijd op zoek geweest naar wat dan normaal is, hoe je normaal doet en wie bepaalt wat normaal of afwijkend is.”\
 Ze raakt geïntrigeerd door de niet te definiëren termen: *normaal*, *afwijkend*, *echt* en *alsof*. Ze verbeeldt haar vragen en gedachten hierover in video, fotografie en installaties.\
@@ -11,10 +11,3 @@ Ze raakt geïntrigeerd door de niet te definiëren termen: *normaal*, *afwijkend
 Vanuit het gevoel zelf vaak niet te voldoen, heeft Madelon compassie met degene die niet kunnen of willen meedoen. Naast haar kunstenaarschap werkt ze in de vluchtelingen-, jeugd- en gehandicaptenzorg, een wereld waarin iedereen zo anders is, maar zo dolgraag normaal wil zijn.\
 “Zowel de ‘winner’ als de ‘loser’, weten niet meer wie ze echt zijn, verliezen hun identiteit, hun eigenheid.”\
 In haar artistieke werk stelt Madelon de vraag wat iemand definieert en geeft een inkijkje in de kwetsbare kant van de mens.
-
-\
-\
-
-
-Website door [Pum van de Koppel](https://pumvandekoppel.nl) \
-Font *Velvelyne* door Mariel Nils, Manon Van der Borght, met bijdrage van Raphaël Bastide, Benjamin Dumond. Gedistribueerd door velvetyne.fr
