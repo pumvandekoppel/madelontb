@@ -21,12 +21,13 @@ collections:
       - { label: 'Link', name: 'link', widget: 'text', required: false }
       - { label: 'Afbeelding', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image'} }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
-#  - name: 'Paginas'
-#    label: 'paginas'
-#    folder: '/content'
-#    files: 
-#      - label: 'Over'
-#        name: 'over' 
-#        file: 'over.md'
-#        fields:
-#          - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
+  - name: 'Paginas'
+    label: 'Paginas'
+    folder: '/content'
+    files: 
+      - label: 'Over'
+        name: 'over' 
+        file: '/content/over/index.html'
+        fields:
+          - { label: 'Portret', name 'image', widget: 'image' }
+          - { label: 'Omschrijving', name: 'body', widget: 'markdown' }

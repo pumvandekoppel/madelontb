@@ -16,7 +16,7 @@
 			{{ range .Pages }}
 			<li>
 				<h1><a href="{{ .RelPermalink }}">{{ .LinkTitle }} ({{ .Params.date.Format "2006"
-						}})</a></h1>
+						}}) - {{ .Params.medium }}</a></h1>
 			</li>
 			{{ end }}
 		</ul>

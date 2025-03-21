@@ -76,27 +76,66 @@ body {
 header {
 	border-bottom: 1px solid #222;
 	margin-bottom: 1rem;
+	height: 9%;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-gap: 20px;
+main {
+	height: calc(88% - 1rem);
 }
 
-.grid a {
+div#home {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
-	height: 0%;
-	padding-bottom: 100%;
-	background: white;
+	height: 100%;
 }
 
-.grid a:last-child:nth-child(3n - 1) {
-	grid-column: span 2;
-	height: auto;
-	padding-bottom: 0;
+div#left-arrow,
+div#right-arrow {
+	font-size: 3em;
+	width: 5vw;
 }
+
+figcaption {
+	display: flex;
+	justify-content: center;
+}
+
+figcaption h1 {
+	padding-bottom: 50px;
+}
+
+.slides {
+	display: flex;
+	max-height: calc(88% - 1rem);
+}
+
+.slides a {
+	display: none;
+	height: 75%;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 75vw;
+	max-height: 80vh;
+}
+
+.slides img {
+	margin-left: 10vw;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	margin: auto;
+	padding: auto;
+	border: 2px solid #00000000;
+
+	left: 12.5vw;
+	top: 25vw;
+	max-width: 75vw;
+	max-height: 80vh;
+}
+
 
 @media (max-width: 400px) {
 	.grid {
@@ -113,6 +152,8 @@ main h4 {
 }
 
 footer {
+	flex: 0;
+	height: 3%;
 	border-top: 1px solid #222;
 	margin-top: 1rem;
 
@@ -151,13 +192,6 @@ li a {
 	vertical-align: middle;
 }
 
-/* custom */
-
-main {
-	height: auto;
-
-}
-
 nav,
 footer {
 	display: flex;
@@ -171,7 +205,7 @@ header {
 }
 
 header h1 a {
-	color: darkgrey;
+	color: #241f31;
 }
 
 nav>a {
