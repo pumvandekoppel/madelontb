@@ -3,6 +3,7 @@ title: Over
 date: 2025-03-04T12:37:23.000Z
 draft: false
 image: f07505ec-51a7-4a0b-9e27-790128a5d41b.jpg
+email: madelonterborg@gmail.com
 ---
 Madelon ter Borg groeit op in een omgeving waar ‘Doe normaal, dan doe je gek genoeg’ de norm is. \
 “Ik ben altijd op zoek geweest naar wat dan normaal is, hoe je normaal doet en wie bepaalt wat normaal of afwijkend is.”\
