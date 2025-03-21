@@ -12,7 +12,7 @@
 	<main>
 		<h1>{{ .Params.title }}</h1>
 		<div class="gallery">
-			{{ range resources.ByType "image" }}
+			{{ range .Site.Resources.ByType "image" }}
 			{{ with .Resize "600x" }}
 			<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 			{{ end }}
