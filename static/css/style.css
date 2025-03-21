@@ -65,7 +65,7 @@ body {
 	line-height: 1.5;
 	margin: 0;
 	max-width: 95vw;
-	height: 100vh;
+	height: 100%;
 	margin-left: 2.5vw;
 	margin-right: 2.5vw;
 	display: flex;
@@ -76,11 +76,11 @@ body {
 header {
 	border-bottom: 1px solid #222;
 	margin-bottom: 1rem;
-	height: 9%;
+	height: 9vw;
 }
 
-main {
-	height: calc(88% - 1rem);
+.gallery h1 {
+	margin-bottom: 3vw;
 }
 
 div#home {
@@ -143,6 +143,10 @@ figcaption h1 {
 	}
 }
 
+main {
+	min-height: calc(100vh - 9vw - 1rem - 6vw);
+}
+
 main h1 {
 	margin-bottom: 0;
 }
@@ -152,24 +156,16 @@ main h4 {
 }
 
 footer {
-	flex: 0;
-	height: 3%;
+	height: 6vw;
 	border-top: 1px solid #222;
-	margin-top: 1rem;
 
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-footer div {
-	height: auto;
-}
-
-footer span {
-	margin-top: auto;
-	margin-bottom: auto;
-	vertical-align: middle;
+footer small {
+	font-size: 0.95em;
 }
 
 h2,
@@ -233,6 +229,14 @@ p {
 	font-family: "Roboto Mono";
 }
 
-footer {
-	margin-top: auto;
+.over main {
+	display: flex;
+	align-items: center;
+	gap: 9vw;
+}
+
+.over gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }

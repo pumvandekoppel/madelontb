@@ -5,30 +5,30 @@
 	{{ partial "head.html" . }}
 </head>
 
-<body>
+<body class="{{ with .File }}{{ .BaseFileName }}{{ end }}">
 	<header>
 		{{ partial "header.html" . }}
 	</header>
 	<main>
-		<h1>{{ .Params.title }}</h1>
 		<div class="gallery">
+			<h1>{{ .Params.title }}</h1>
 			{{ range .Parent.Resources.ByType "image" }}
-			{{ with .Resize "200x" }}
+			{{ with .Resize "250x" }}
 			<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 			{{ end }}
 			{{ end }}
+			<h3><a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></h3>
 		</div>
-		<p>{{ .Content }}</p>
-		<p>Website door <a href="https;//pumvandekoppel.nl">Pum van de koppel</a>.<br>Font door Mariel Nils,
-			Manon Van der Borght, met hulp van Raphaël Bastide, Benjamin Dumond. Via <a
-				href="https://velvetyne.fr">velvetyne.fr</a> </p>
-		<br><br>
-		{{ with $.Params.link }}
-		<a href="{{ $.Params.link }}">Link</a>
+		<section>
+			<p>{{ .Content }}.<br>
+				{{ with $.Params.link }}
+				<a href="{{ $.Params.link }}">Link</a>
+		</section>
 		{{ end }}
 	</main>
 	<footer>
-		{{ partial "footer.html" . }}
+		<small>Website door <a href="https;//pumvandekoppel.nl">Pum van de koppel</a>, Font door <a
+				href="https://velvetyne.fr">velvetyne</a></small>
 	</footer>
 	<!-- Include the script that builds the page and powers Decap CMS -->
 	<!-- script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script-->
