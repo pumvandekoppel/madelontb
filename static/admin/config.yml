@@ -23,11 +23,10 @@ collections:
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
   - name: 'Paginas'
     label: 'Paginas'
-    folder: '/content'
     files: 
       - label: 'Over'
         name: 'over' 
-        file: '/content/over/index.html'
+        file: '/content/over.md'
         fields:
           - { label: 'Portret', name: 'image', widget: 'image' }
           - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
