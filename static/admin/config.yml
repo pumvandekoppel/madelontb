@@ -26,7 +26,13 @@ collections:
     files: 
       - label: 'Over'
         name: 'over' 
+        media_folder: ''
+        public_folder: ''
+        create: false
+        editor:
+          preview: false
         file: '/content/over.md'
         fields:
           - { label: 'Portret', name: 'image', widget: 'image' }
           - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
+          - { label: 'Credits', name: 'credits', widget: 'markdown', hidden: true' }
