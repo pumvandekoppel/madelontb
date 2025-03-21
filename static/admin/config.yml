@@ -35,4 +35,8 @@ collections:
         fields:
           - { label: 'Portret', name: 'image', widget: 'image' }
           - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
-          - { label: 'Credits', name: 'credits', widget: 'markdown', hidden: true' }
+          - { label: 'Credits', name: 'credits', widget: 'hidden', default: '
+Website door Pum van de Koppel 
+
+Font Velvelyne door Mariel Nils, Manon Van der Borght, met bijdrage van Raphaël Bastide, Benjamin Dumond. Gedistribueerd door velvetyne.fr
+' }
