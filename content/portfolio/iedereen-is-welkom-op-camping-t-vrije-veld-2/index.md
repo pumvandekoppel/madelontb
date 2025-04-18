@@ -12,4 +12,7 @@ afbeeldingen:
   - photo-2023-08-27-10-29-33-10.jpg
   - photo-2023-08-28-22-22-06.jpg
 ---
-...
+Camping 't Vrije Veld streek neer op camping de ReCreatie in Leusden. 
+Bezoekers werden uitgenodigd voor een gesprek over kamperen, het gevoel 
+van vrijheid en hoe het gesteld is met de vrijheid van andere mensen in 
+Nederland en de rest van de wereld.
