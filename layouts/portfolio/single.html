@@ -10,16 +10,18 @@
 		{{ partial "header.html" . }}
 	</header>
 	<main>
-		<h1>{{ .Params.title }} ({{ .Params.date.Format "2006" }})</h1>
-		<h4>-&ensp;{{ .Params.medium }}</h4>
-		<div class="gallery">
-			{{ range .Resources.ByType "image" }}
-			{{ with .Resize "600x" }}
-			<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-			{{ end }}
-			{{ end }}
-		</div>
+        <div id="work-specs"><h1>{{ .Params.title }} ({{ .Params.date.Format "2006" }})</h1>
+        <h4>-&ensp;{{ .Params.medium }}</h4></div>
 		<p>{{ .Content }}</p>
+		<ul class="documentation">
+			{{ range .Resources.ByType "image" }}
+			{{ with .Resize "1080x" }}
+			<a href="{{ .RelPermalink }}" class="documentation-item">
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+            </a>
+			{{ end }}
+			{{ end }}
+		</ul>
 		<br><br>
 		{{ with $.Params.link }}
 		<a href="{{ $.Params.link }}">Link</a>
