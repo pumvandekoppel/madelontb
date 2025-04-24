@@ -6,7 +6,7 @@ public_folder: /img
 collections:
   - name: 'Madelon ter Borg'
     label: 'Portfolio'
-    folder: '/content/portfolio/hugo page bundles'
+    folder: '/content/portfolio/'
     media_folder: ''
     public_folder: ''
     create: true
@@ -18,7 +18,7 @@ collections:
       - { label: 'Jaar', name: 'date', widget: 'datetime' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
-      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' } 
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image'} 
       - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image'} }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
 #  - name: 'Paginas'
