@@ -11,6 +11,7 @@ collections:
     public_folder: ''
     create: true
     slug: '{{titel}}'
+    path: '{{slug}}/index'
     editor:
       preview: false
     fields:
@@ -21,12 +22,19 @@ collections:
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image'} 
       - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image'} }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
-#  - name: 'Paginas'
-#    label: 'paginas'
-#    folder: '/content'
-#    files: 
-#      - label: 'Over'
-#        name: 'over' 
-#        file: 'over.md'
-#        fields:
-#          - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
+  - name: 'Paginas'
+    label: 'paginas'
+    files: 
+      - label: 'Over'
+        name: 'over' 
+        media_folder: ''
+        public_folder: ''
+        create: false
+        editor:
+          preview: false
+        file: '/content/over.md'
+        fields: 
+          - { label: 'Portret', name: 'image', widget: 'image' }
+          - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
+          - { label: 'Email', name: 'email', widget: 'text' }
+
