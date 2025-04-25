@@ -21,11 +21,9 @@
             </a>
 			{{ end }}
 			{{ end }}
+		    <a href="{{ $.Params.link }}">Link</a>
 		</ul>
 		<br><br>
-		{{ with $.Params.link }}
-		<a href="{{ $.Params.link }}">Link</a>
-		{{ end }}
 	</main>
 	<footer>
 		{{ partial "footer.html" . }}

@@ -19,8 +19,8 @@ collections:
       - { label: 'Jaar', name: 'date', widget: 'datetime' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
-      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image'} 
-      - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image'} }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: false, media_folder: 'thumbnail'  } 
+      - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image', choose_url: false, media_folder: 'images'} }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
   - name: 'Paginas'
     label: 'paginas'
@@ -34,7 +34,7 @@ collections:
           preview: false
         file: '/content/over.md'
         fields: 
-          - { label: 'Portret', name: 'image', widget: 'image' }
+      - { label: 'Portret', name: 'image', widget: 'image', choose_url: false }
           - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
           - { label: 'Email', name: 'email', widget: 'text' }
 
