@@ -40,23 +40,23 @@ collections:
             name: 'opleidingen' 
             widget: 'list'
             fields: 
-             - { label: 'Opleiding', name: 'opleiding', widget: 'markdown' }
-             - { label: 'Instituut', name: 'plek', widget: 'markdown' }
-             - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'markdown' } 
+             - { label: 'Opleiding', name: 'opleiding', widget: 'text' }
+             - { label: 'Instituut', name: 'plek', widget: 'text' }
+             - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'text' } 
           - label: 'CV: Tentoonstellingen'
             name: 'Tentoonstellingen' 
             widget: 'list'
             fields: 
-              - { label: 'Naam', name: 'naam', widget: 'markdown' }
-              - { label: 'Tentoonstellingsruimte', name: 'Tentoonstellingsruimte', widget: 'markdown' }
-              - { label: 'Tentoonstellingsdata', name: 'Tentoonstellingsdata', widget: 'markdown' } 
+              - { label: 'Naam', name: 'naam', widget: 'text' }
+              - { label: 'Tentoonstellingsruimte', name: 'Tentoonstellingsruimte', widget: 'text' }
+              - { label: 'Tentoonstellingsdata', name: 'Tentoonstellingsdata', widget: 'text' } 
           - label: 'CV: Overig'
             name: 'overig' 
             required: false
             widget: 'list'
             fields: 
-              - { label: 'Wat', name: 'Wat', widget: 'markdown' }
-              - { label: 'Plek', name: 'plek', widget: 'markdown' }
-              - { label: 'Data', name: 'data', widget: 'markdown' } 
+              - { label: 'Wat', name: 'wat', widget: 'text' }
+              - { label: 'Plek', name: 'plek', widget: 'text' }
+              - { label: 'Data', name: 'data', widget: 'text' } 
           - { label: 'Email', name: 'email', widget: 'text' }
 
