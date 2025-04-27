@@ -32,27 +32,27 @@
 			<h1>C.V.</h1>
 			<div>
 				<h2>Opleidingen</h2>
-				{{ range $.Page.Site.Params.opleidingen }}
-				<p>{{ $.Page.Site.Params.opleidingen.Params.afstudeerdata }} - <em>{{
-						$.Page.Site.Params.opleidingen.Params.opleiding
-						}}</em>, {{ $.Page.Site.Params.opleidingen.Params.plek }}</p>
+				{{ range $.Page.Params.opleidingen }}
+				<p>{{ $.Page.Params.opleidingen.afstudeerdata }} - <em>{{
+						$.Page.Params.opleidingen.opleiding
+						}}</em>, {{ $.Page.Params.opleidingen.plek }}</p>
 				{{ end }}
 			</div>
 			<div>
 				<h2>Exposities</h2>
-				{{ range $.Page.Site.Params.tentoonstellingen }}
-				<p>{{ $.Page.Site.Params.tentoonstellingen.Params.tentoonstellingsdata }} <small>{{
-						$.Page.Site.Params.tentoonstellingen.Params.soort }}</small> - <em>{{
-						$.Page.Site.Params.tentoonstellingen.Params.naam }}</em>, {{
-					$.Page.Site.Params.tentoonstellingen.Params.tentoonstellingsruimte }}</p>
+				{{ range $.Page.Params.tentoonstellingen }}
+				<p>{{ $.Page.Params.tentoonstellingen.tentoonstellingsdata }} <small>{{
+						$.Page.Params.tentoonstellingen.soort }}</small> - <em>{{
+						$.Page.Params.tentoonstellingen.naam }}</em>, {{
+					$.Page.Params.tentoonstellingen.tentoonstellingsruimte }}</p>
 				{{ end }}
 			</div>
 			<div>
 				<h2>Overig</h2>
-				{{ range $.Site.Params.overig }}
-				<p>{{ $.Site.Params.overig.Params.data }} - <em>{{ $.Site.Params.overig.Params.wat
+				{{ range $.Params.overig }}
+				<p>{{ $.Params.overig.data }} - <em>{{ $.Params.overig.wat
 						}}</em>, {{
-					$.Site.Params.overig.Params.plek
+					$.Params.overig.plek
 					}}</p>
 				{{ end }}
 			</div>
