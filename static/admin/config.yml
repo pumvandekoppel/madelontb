@@ -38,14 +38,14 @@ collections:
           - { label: 'Artist Statement', name: 'body', widget: 'markdown' }
           - label: 'Opleidingen'
             name: 'opleidingen' 
-            widget: 'object'
+            widget: 'list'
             fields: 
              - { label: 'Opleiding', name: 'opleiding', widget: 'text' }
              - { label: 'Instituut', name: 'plek', widget: 'text' }
              - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'text' } 
           - label: 'Tentoonstellingen'
             name: 'tentoonstellingen' 
-            widget: 'object'
+            widget: 'list'
             fields: 
               - { label: 'Naam', name: 'naam', widget: 'text' }
               - { label: 'Tentoonstellingsruimte', name: 'tentoonstellingsruimte', widget: 'text' }
@@ -54,7 +54,7 @@ collections:
           - label: 'Overig'
             name: 'overig' 
             required: false
-            widget: 'object'
+            widget: 'list'
             fields: 
               - { label: 'Wat', name: 'wat', widget: 'text' }
               - { label: 'Plek', name: 'plek', widget: 'text' }
