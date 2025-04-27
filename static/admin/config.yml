@@ -36,21 +36,22 @@ collections:
         fields: 
           - { label: 'Portret', name: 'image', widget: 'image', choose_url: false }
           - { label: 'Artist Statement', name: 'body', widget: 'markdown' }
-          - label: 'CV: opleidingen'
+          - label: 'Opleidingen'
             name: 'opleidingen' 
             widget: 'list'
             fields: 
              - { label: 'Opleiding', name: 'opleiding', widget: 'text' }
              - { label: 'Instituut', name: 'plek', widget: 'text' }
              - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'text' } 
-          - label: 'CV: Tentoonstellingen'
-            name: 'Tentoonstellingen' 
+          - label: 'Tentoonstellingen'
+            name: 'tentoonstellingen' 
             widget: 'list'
             fields: 
               - { label: 'Naam', name: 'naam', widget: 'text' }
               - { label: 'Tentoonstellingsruimte', name: 'Tentoonstellingsruimte', widget: 'text' }
+              - { label: 'Soort', name: 'soort', widget: 'text' }
               - { label: 'Tentoonstellingsdata', name: 'Tentoonstellingsdata', widget: 'text' } 
-          - label: 'CV: Overig'
+          - label: 'Overig'
             name: 'overig' 
             required: false
             widget: 'list'
