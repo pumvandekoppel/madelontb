@@ -16,7 +16,7 @@ collections:
       preview: false
     fields:
       - { label: 'Titel', name: 'title', widget: 'string' }
-      - { label: 'Jaar', name: 'date', widget: 'datetime' }
+      - { label: 'Jaar', name: 'date', widget: 'string' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: false, media_folder: 'thumbnail'  } 
@@ -48,8 +48,8 @@ collections:
             widget: 'list'
             fields: 
               - { label: 'Naam', name: 'naam', widget: 'text' }
-              - { label: 'Tentoonstellingsruimte', name: 'Tentoonstellingsruimte', widget: 'text' }
-              - { label: 'Tentoonstellingsdata', name: 'Tentoonstellingsdata', widget: 'text' } 
+              - { label: 'Tentoonstellingsruimte', name: 'tentoonstellingsruimte', widget: 'text' }
+              - { label: 'Tentoonstellingsdata', name: 'tentoonstellingsdata', widget: 'text' } 
               - { label: 'Soort', name: 'soort', widget: 'text' }
           - label: 'Overig'
             name: 'overig' 

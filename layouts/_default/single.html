@@ -10,21 +10,49 @@
 		{{ partial "header.html" . }}
 	</header>
 	<main>
-		<div class="gallery">
-			<h1>{{ .Params.title }}</h1>
-			{{ range .Parent.Resources.ByType "image" }}
-			{{ with .Resize "250x" }}
-			<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+		<div id="kunstenaar">
+			<div class="gallery">
+				<h1>{{ .Params.title }}</h1>
+				{{ range .Parent.Resources.ByType "image" }}
+				{{ with .Resize "250x" }}
+				<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+				{{ end }}
+				{{ end }}
+				<h3><a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></h3>
+			</div>
+			<section>
+				<p>{{ .Content }}
+					{{ with $.Params.link }}
+					<br><a href="{{ $.Params.link }}">Link</a>
+			</section>
 			{{ end }}
-			{{ end }}
-			<h3><a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></h3>
 		</div>
-		<section>
-			<p>{{ .Content }}
-				{{ with $.Params.link }}
-				<br><a href="{{ $.Params.link }}">Link</a>
-		</section>
-		{{ end }}
+		<div id="cv">
+
+			<h1>C.V.</h1>
+			<div>
+				<h2>Opleidingen</h2>
+				{{ range .Params.opleidingen }}
+				<p>{{ .Params.opleidingen.afstudeerdata }} - <em>{{ .Params.opleidingen.opleiding
+						}}</em>, {{ .Params.opleidingen.plek }}</p>
+				{{ end }}
+			</div>
+			<div>
+				<h2>Exposities</h2>
+				{{ range .Params.tentoonstellingen }}
+				<p>{{ .Params.tentoonstellingen.tentoonstellingsdata }} <small>{{
+						.Params.tentoonstellingen.soort }}</small> - <em>{{
+						.Params.tentoonstellingen.naam }}</em>, {{
+					.Params.tentoonstellingsruimte }}</p>
+				{{ end }}
+			</div>
+			<div>
+				<h2>Overig</h2>
+				{{ range .Params.overig }}
+				<p>{{ .Params.overig.data }} - <em>{{ .Params.overig.wat }}</em>, {{ .Params.overig.plek
+					}}</p>
+			</div>
+		</div>
 	</main>
 	<footer style="display: flex; justify-content: space-between;">
 		<small><a href="mailto:madelonterborg@gmail.com">madelonterborg@gmail.com</a>&ensp;|&ensp;Copyright {{
