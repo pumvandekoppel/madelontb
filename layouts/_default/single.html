@@ -33,23 +33,23 @@
 			<div>
 				<h2>Opleidingen</h2>
 				{{ range .Params.opleidingen }}
-				<p>{{ .Params.opleidingen.afstudeerdata }} - <em>{{ .Params.opleidingen.opleiding
-						}}</em>, {{ .Params.opleidingen.plek }}</p>
+				<p>{{ .Params.afstudeerdata }} - <em>{{ .Params.opleiding
+						}}</em>, {{ .Params.plek }}</p>
 				{{ end }}
 			</div>
 			<div>
 				<h2>Exposities</h2>
 				{{ range .Params.tentoonstellingen }}
-				<p>{{ .Params.tentoonstellingen.tentoonstellingsdata }} <small>{{
-						.Params.tentoonstellingen.soort }}</small> - <em>{{
-						.Params.tentoonstellingen.naam }}</em>, {{
+				<p>{{ .Params.tentoonstellingsdata }} <small>{{
+						.Params.soort }}</small> - <em>{{
+						.Params.naam }}</em>, {{
 					.Params.tentoonstellingsruimte }}</p>
 				{{ end }}
 			</div>
 			<div>
 				<h2>Overig</h2>
 				{{ range .Params.overig }}
-				<p>{{ .Params.overig.data }} - <em>{{ .Params.overig.wat }}</em>, {{ .Params.overig.plek
+				<p>{{ .Params.data }} - <em>{{ .Params.wat }}</em>, {{ .Params.plek
 					}}</p>
 				{{ end }}
 			</div>
