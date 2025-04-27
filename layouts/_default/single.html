@@ -31,14 +31,14 @@
 				<h2>Opleidingen</h2>
 				{{ range .Page.Params.opleidingen }}
 				<p>{{ .Params.afstudeerdata }} - <em>{{
-						Page.Params.opleiding
-						}}</em>, {{ .Page.Params.plek }}</p>
+						.Page.Params.opleiding
+						}}</em>, {{ .Page.Params.opleidingen.plek }}</p>
 				{{ end }}
 			</div>
 			<div>
 				<h2>Exposities</h2>
 				{{ range .Page.Params.tentoonstellingen }}
-				<p>{{ .Page.Params.tentoonstellingsdata }} <small>{{
+				<p>{{ .Params.tentoonstellingen.tentoonstellingsdata }} <small>{{
 						.Page.Params.tentoonstellingen.soort }}</small> - <em>{{
 						.Page.Params.tentoonstellingen.naam }}</em>, {{
 					.Page.Params.tentoonstellingen.tentoonstellingsruimte }}</p>
