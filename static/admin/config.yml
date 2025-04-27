@@ -34,29 +34,29 @@ collections:
           preview: false
         file: '/content/over.md'
         fields: 
-      - { label: 'Portret', name: 'image', widget: 'image', choose_url: false }
-      - { label: 'Artist Statement', name: 'body', widget: 'markdown' }
-      - label: 'CV: opleidingen'
-        name: 'opleidingen' 
-        widget: 'list'
-        fields: 
-         - { label: 'Opleiding', name: 'opleiding', widget: 'markdown' }
-         - { label: 'Instituut', name: 'plek', widget: 'markdown' }
-         - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'markdown' } 
-      - label: 'CV: Tentoonstellingen'
-        name: 'Tentoonstellingen' 
-        widget: 'list'
-        fields: 
-          - { label: 'Naam', name: 'naam', widget: 'markdown' }
-          - { label: 'Tentoonstellingsruimte', name: 'tentoonstellingsruimte', widget: 'markdown' }
-          - { label: 'Tentoonstellingsdata', name: 'Tentoonstellingsdata', widget: 'markdown' } 
-      - label: 'CV: Overig'
-        name: 'overig' 
-        required: false
-        widget: 'list'
-        fields: 
-          - { label: 'Wat', name: 'Wat', widget: 'markdown' }
-          - { label: 'Plek', name: 'plek', widget: 'markdown' }
-          - { label: 'Data', name: 'data', widget: 'markdown' } 
-      - { label: 'Email', name: 'email', widget: 'text' }
+          - { label: 'Portret', name: 'image', widget: 'image', choose_url: false }
+          - { label: 'Artist Statement', name: 'body', widget: 'markdown' }
+          - label: 'CV: opleidingen'
+            name: 'opleidingen' 
+            widget: 'list'
+            fields: 
+             - { label: 'Opleiding', name: 'opleiding', widget: 'markdown' }
+             - { label: 'Instituut', name: 'plek', widget: 'markdown' }
+             - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'markdown' } 
+          - label: 'CV: Tentoonstellingen'
+            name: 'Tentoonstellingen' 
+            widget: 'list'
+            fields: 
+              - { label: 'Naam', name: 'naam', widget: 'markdown' }
+              - { label: 'Tentoonstellingsruimte', name: 'Tentoonstellingsruimte', widget: 'markdown' }
+              - { label: 'Tentoonstellingsdata', name: 'Tentoonstellingsdata', widget: 'markdown' } 
+          - label: 'CV: Overig'
+            name: 'overig' 
+            required: false
+            widget: 'list'
+            fields: 
+              - { label: 'Wat', name: 'Wat', widget: 'markdown' }
+              - { label: 'Plek', name: 'plek', widget: 'markdown' }
+              - { label: 'Data', name: 'data', widget: 'markdown' } 
+          - { label: 'Email', name: 'email', widget: 'text' }
 
