@@ -22,8 +22,6 @@
 			</div>
 			<section>
 				<p>{{ .Content }}
-					{{ with $.Params.link }}
-					<br><a href="{{ $.Params.link }}">Link</a>
 			</section>
 			{{ end }}
 		</div>
@@ -32,27 +30,27 @@
 			<h1>C.V.</h1>
 			<div>
 				<h2>Opleidingen</h2>
-				{{ range $.Page.Params.opleidingen }}
-				<p>{{ $.Page.Params.opleidingen.afstudeerdata }} - <em>{{
-						$.Page.Params.opleidingen.opleiding
-						}}</em>, {{ $.Page.Params.opleidingen.plek }}</p>
+				{{ range .Page.Params.opleidingen }}
+				<p>{{ .Page.Params.opleidingen.afstudeerdata }} - <em>{{
+						.Page.Params.opleidingen.opleiding
+						}}</em>, {{ .Page.Params.opleidingen.plek }}</p>
 				{{ end }}
 			</div>
 			<div>
 				<h2>Exposities</h2>
-				{{ range $.Page.Params.tentoonstellingen }}
-				<p>{{ $.Page.Params.tentoonstellingen.tentoonstellingsdata }} <small>{{
-						$.Page.Params.tentoonstellingen.soort }}</small> - <em>{{
-						$.Page.Params.tentoonstellingen.naam }}</em>, {{
-					$.Page.Params.tentoonstellingen.tentoonstellingsruimte }}</p>
+				{{ range .Page.Params.tentoonstellingen }}
+				<p>{{ .Page.Params.tentoonstellingen.tentoonstellingsdata }} <small>{{
+						.Page.Params.tentoonstellingen.soort }}</small> - <em>{{
+						.Page.Params.tentoonstellingen.naam }}</em>, {{
+					.Page.Params.tentoonstellingen.tentoonstellingsruimte }}</p>
 				{{ end }}
 			</div>
 			<div>
 				<h2>Overig</h2>
-				{{ range $.Params.overig }}
-				<p>{{ $.Params.overig.data }} - <em>{{ $.Params.overig.wat
+				{{ range .Params.overig }}
+				<p>{{ .Params.overig.data }} - <em>{{ .Params.overig.wat
 						}}</em>, {{
-					$.Params.overig.plek
+					.Params.overig.plek
 					}}</p>
 				{{ end }}
 			</div>
