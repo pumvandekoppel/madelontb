@@ -32,7 +32,7 @@ collections:
         create: false
         editor:
           preview: false
-        file: '/content/over.md'
+        file: '/content/over-madelon.md'
         fields: 
           - { label: 'Portret', name: 'image', widget: 'image', choose_url: false }
           - { label: 'Artist Statement', name: 'body', widget: 'markdown' }
