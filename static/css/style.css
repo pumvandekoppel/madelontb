@@ -277,14 +277,14 @@ p {
 	font-family: "Roboto Mono";
 }
 
-.over main div#kunstenaar {
+.over-madelon main div#kunstenaar {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	gap: 9vw;
 }
 
-.over documentation {
+.over-madelon documentation {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
