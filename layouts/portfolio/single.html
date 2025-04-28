@@ -10,18 +10,21 @@
 		{{ partial "header.html" . }}
 	</header>
 	<main>
-        <div id="work-specs"><h1>{{ .Params.title }} ({{ .Params.date.Format "2006" }})</h1>
-        <h4>-&ensp;{{ .Params.medium }}</h4></div>
+		<div id="work-specs">
+			<h1>{{ .Params.title }} ({{ .Params.date.Format "2006" }})</h1>
+			<h4>-&ensp;{{ .Params.medium }}</h4>
+		</div>
 		<p>{{ .Content }}</p>
 		<ul class="documentation">
-			{{ range .Resources.ByType "image" }}
+			{{ range .Resources.ByType "image" := where .Data.Pages "Section" .Section }}
+			<!-- {{ range $index, $element :=  where .Data.Pages "Section" .Section}} -->
 			{{ with .Resize "1080x" }}
 			<a href="{{ .RelPermalink }}" class="documentation-item">
-                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-            </a>
+				<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+			</a>
 			{{ end }}
 			{{ end }}
-		    <a href="{{ $.Params.link }}">Link</a>
+			<a href="{{ $.Params.link }}">Link</a>
 		</ul>
 		<br><br>
 	</main>
