@@ -2,6 +2,7 @@
 title: Iedereen is welkom op camping 'T Vrije Veld 2
 date: 2023-03-20T20:52:00.000Z
 medium: installatie
+thumbnail: thumbnail/iedereen-is-welkom-op-camping-t-vrije-veld-2_thumbnail.jpg
 afbeeldingen:
   - img_9858.jpg
   - img_9859.jpg
