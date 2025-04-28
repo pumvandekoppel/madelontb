@@ -20,7 +20,7 @@ collections:
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: false, media_folder: 'thumbnail'  } 
-      - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'object', field: {label: 'Afbeelding', name: 'image', widget: 'image', choose_url: false, media_folder: 'images'} }
+      - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image', choose_url: false, media_folder: 'images'} }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
   - name: 'Paginas'
     label: 'paginas'
@@ -38,26 +38,38 @@ collections:
           - { label: 'Artist Statement', name: 'body', widget: 'markdown' }
           - label: 'Opleidingen'
             name: 'opleidingen' 
-            widget: 'object'
-            fields: 
-             - { label: 'Opleiding', name: 'opleiding', widget: 'text' }
-             - { label: 'Instituut', name: 'plek', widget: 'text' }
-             - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'text' } 
+            widget: 'list'
+            field: 
+              label: 'Educatie'
+              name: 'educatie'
+              widget: 'object' 
+              fields:
+                - { label: 'Opleiding', name: 'opleiding', widget: 'text' }
+                - { label: 'Instituut', name: 'plek', widget: 'text' }
+                - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'text' }  
           - label: 'Tentoonstellingen'
             name: 'tentoonstellingen' 
-            widget: 'object'
-            fields: 
-              - { label: 'Naam', name: 'naam', widget: 'text' }
-              - { label: 'Tentoonstellingsruimte', name: 'tentoonstellingsruimte', widget: 'text' }
-              - { label: 'Tentoonstellingsdata', name: 'tentoonstellingsdata', widget: 'text' } 
-              - { label: 'Soort', name: 'soort', widget: 'text' }
+            widget: 'list'
+            field: 
+              label: 'Zichtbaarheid'
+              name: 'zichtbaarheid'
+              widget: 'object'
+              fields:
+                - { label: 'Naam', name: 'naam', widget: 'text' }
+                - { label: 'Tentoonstellingsruimte', name: 'tentoonstellingsruimte', widget: 'text' }
+                - { label: 'Tentoonstellingsdata', name: 'tentoonstellingsdata', widget: 'text' } 
+                - { label: 'Soort', name: 'soort', widget: 'text' }
           - label: 'Overig'
             name: 'overig' 
             required: false
             widget: 'list'
-            fields: 
-              - { label: 'Wat', name: 'wat', widget: 'text' }
-              - { label: 'Plek', name: 'plek', widget: 'text' }
-              - { label: 'Data', name: 'data', widget: 'text' } 
+            field: 
+              label: 'Engagement'
+              name: 'engagement'
+              widget: object'
+              fields: 
+                - { label: 'Wat', name: 'wat', widget: 'text' }
+                - { label: 'Plek', name: 'plek', widget: 'text' }
+                - { label: 'Data', name: 'data', widget: 'text' } 
           - { label: 'Email', name: 'email', widget: 'text' }
 
