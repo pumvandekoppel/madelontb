@@ -17,12 +17,10 @@
 		<p>{{ .Content }}</p>
 		<ul class="documentation">
 			{{ range .Resources.ByType "image" where .Data.Pages "Section" .Section }}
-			<!-- {{ range $index, $element :=  where .Data.Pages "Section" .Section}} -->
-			{{ with .Resize "1080x" }}
+			<!-- {{ range $index, $element := where .Data.Pages "Section" .Section}} -->
 			<a href="{{ .RelPermalink }}" class="documentation-item">
 				<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 			</a>
-			{{ end }}
 			{{ end }}
 			<a href="{{ $.Params.link }}">Link</a>
 		</ul>
