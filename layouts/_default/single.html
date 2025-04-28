@@ -30,9 +30,9 @@
 			<div>
 				<h2>Opleidingen</h2>
 				{{ range .Page.Params.opleidingen }}
-				<p>{{ .Page.Params.opleidingen.afstudeerdata }} - <em>{{
-							.Page.Params.opleiding
-							}}</em>, {{ .Page.Params.opleidingen.plek }}</p>
+				<p>{{ .Page.Params.educatie.afstudeerdata }} - <em>{{
+							.Page.Params.educatie.opleiding
+							}}</em>, {{ .Page.Params.educatie.plek }}</p>
 				{{ end }}
 			</div>
 			<div>
