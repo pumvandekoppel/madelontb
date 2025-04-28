@@ -2,6 +2,7 @@
 title: Das Ende des Kapitalismus
 date: 2024-03-20T20:58:00.000Z
 medium: installatie
+thumbnail: thumbnail/das-ende-des-kapitalismus_thumbnail.jpg
 afbeeldingen:
   - _1020682.jpg
   - _1020687.jpg
