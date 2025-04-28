@@ -19,7 +19,7 @@ collections:
       - { label: 'Jaar', name: 'date', widget: 'string' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
-      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: false, media_folder: './thumbnail', public_folder: './thumbnail'  } 
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: false, media_folder: '{{slug}}/thumbnail', public_folder: '{{slug}}/thumbnail'  } 
       - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image', choose_url: false, media_folder: 'images'} }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
   - name: 'Paginas'
