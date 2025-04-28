@@ -16,7 +16,7 @@ collections:
       preview: false
     fields:
       - { label: 'Titel', name: 'title', widget: 'string' }
-      - { label: 'Jaar', name: 'date', widget: 'string' }
+      - { label: 'Jaar', name: 'jaar', widget: 'string' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'text', required: false }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: false, media_folder: 'thumbnail', public_folder: 'thumbnail' } 
