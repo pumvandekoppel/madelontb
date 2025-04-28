@@ -1,6 +1,6 @@
 ---
 title: Iedereen is welkom op camping 'T Vrije Veld 1
-date: "2022"
+jaar: "2022"
 medium: installatie
 link: https://youtu.be/HxcUWTG50pA
 thumbnail: thumbnail/iedereen-is-welkom-op-camping-t-vrije-veld-1_thumbnail.jpg

@@ -1,6 +1,6 @@
 ---
 title: Outside In
-date: "2020"
+jaar: "2020"
 medium: video
 link: https://youtu.be/QwNF8P6Xprg
 thumbnail: thumbnail/outside-in_thumbnail.png

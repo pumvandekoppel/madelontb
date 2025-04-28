@@ -1,6 +1,6 @@
 ---
 title: Ontmoet mijn buren
-date: "2021"
+jaar: "2021"
 medium: video
 link: https://youtu.be/a6JMCwYKG70
 thumbnail: thumbnail/ontmoet-mijn-buren_thumbnail.jpg

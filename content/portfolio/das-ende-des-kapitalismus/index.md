@@ -1,6 +1,6 @@
 ---
 title: Das Ende des Kapitalismus
-date: "2024"
+jaar: "2024"
 medium: installatie
 thumbnail: thumbnail/das-ende-des-kapitalismus_thumbnail.jpg
 afbeeldingen:
