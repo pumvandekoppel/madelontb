@@ -15,7 +15,7 @@
 		<p>{{ .Content }}</p>
 		<ul class="documentation">
             {{ if not (in .Section "thumbnail") }} 
-			{{ range .Resources.ByType "image" }}
+			{{ range .Resources.Match "*documentatie*" }}
                     <a href="{{ .RelPermalink }}" class="documentation-item">
                         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
                     </a>
