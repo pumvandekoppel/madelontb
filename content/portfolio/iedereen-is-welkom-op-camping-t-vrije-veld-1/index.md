@@ -1,8 +1,9 @@
 ---
 title: Iedereen is welkom op camping 'T Vrije Veld 1
-date: 2022-03-20T20:48:00.000Z
+date: "2022"
 medium: installatie
 link: https://youtu.be/HxcUWTG50pA
+thumbnail: thumbnail/iedereen-is-welkom-op-camping-t-vrije-veld-1_thumbnail.jpg
 afbeeldingen:
   - 20220703hroig_thehaguedocu146410.jpg
   - 20220704hroig_thehaguedocu206918.jpg
