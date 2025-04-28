@@ -3,7 +3,7 @@ title: Nena
 date: 2021-03-20T20:40:00.000Z
 medium: Installatie en instagram account
 link: https://www.instagram.com/nena.on.insta
-thumbnail: _1020284.jpg
+thumbnail: thumbnail/nena_thumbnail.jpg
 afbeeldingen:
   - _1020280.jpg
   - _1020282.jpg
