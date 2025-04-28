@@ -40,19 +40,19 @@ collections:
             name: 'opleidingen' 
             widget: 'list'
             field: 
-              label: 'Educatie'
-              name: 'educatie'
+              label: 'Studie'
+              name: 'studie'
               widget: 'object' 
               fields:
                 - { label: 'Opleiding', name: 'opleiding', widget: 'text' }
                 - { label: 'Instituut', name: 'plek', widget: 'text' }
                 - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'text' }  
-          - label: 'Tentoonstellingen'
-            name: 'tentoonstellingen' 
+          - label: 'Zichtbaarheid'
+            name: 'zichtbaarheid' 
             widget: 'list'
             field: 
-              label: 'Zichtbaarheid'
-              name: 'zichtbaarheid'
+              label: 'Tentoonstelling'
+              name: 'tentoonstelling'
               widget: 'object'
               fields:
                 - { label: 'Naam', name: 'naam', widget: 'text' }

@@ -30,27 +30,19 @@
 			<div>
 				<h2>Opleidingen</h2>
 				{{ range .Page.Params.opleidingen }}
-                    {{ range .Params.educatie }}
-	    			<p>{{ .Params.afstudeerdata }} - <em>{{ .Params.opleiding }}</em>, {{ .Params.plek }}</p>
-                    {{ end }}
+	    			<p>{{ .studie.afstudeerdata }} - <em>{{ .studie.opleiding }}</em>, {{ .studie.plek }}</p>
 				{{ end }}
 			</div>
 			<div>
 				<h2>Exposities</h2>
-				{{ range .Page.Params.tentoonstellingen }}
-				<p>{{ .Params.tentoonstellingen.tentoonstellingsdata }} <small>{{
-						.Page.Params.tentoonstellingen.soort }}</small> - <em>{{
-						.Page.Params.tentoonstellingen.naam }}</em>, {{
-					.Page.Params.tentoonstellingen.tentoonstellingsruimte }}</p>
+				{{ range .Page.Params.zichtbaarheid }}
+    				<p>{{ .tentoonstelling.tentoonstellingsdata }} <small>{{ .tentoonstelling.soort }}</small> - <em>{{ .tentoonstelling.naam }}</em>, {{ .tentoonstelling.tentoonstellingsruimte }}</p>
 				{{ end }}
 			</div>
 			<div>
 				<h2>Overig</h2>
-				{{ range .Params.overig }}
-				<p>{{ .Params.overig.data }} - <em>{{ .Params.overig.wat
-						}}</em>, {{
-					.Params.overig.plek
-					}}</p>
+				{{ range .Page.Params.overig }}
+				<p>{{ .engagement.data }} - <em>{{ .engagement.wat }}</em>, {{ .engagement.plek }}</p>
 				{{ end }}
 			</div>
 		</div>
