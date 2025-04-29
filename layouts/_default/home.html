@@ -15,7 +15,7 @@
 		{{ range (where .Site.Pages "Section" "portfolio") }}
 			{{ range .Pages }}
 			<li>
-                <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</h3><img src="{{ .Params.title | urlize }}.jpg"></a></h3><h4>{{ .Params.medium }} · ({{ .Params.jaar	}})</h4>
+                <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</h3><img src="img/{{ .Params.title | urlize }}.jpg"></a></h3><h4>{{ .Params.medium }} · ({{ .Params.jaar	}})</h4>
 			</li>
 			{{ end }}
 		{{ end }}
