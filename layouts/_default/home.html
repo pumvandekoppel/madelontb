@@ -6,29 +6,31 @@
 </head>
 
 <body>
-	<header>
-		{{ partial "header.html" . }}
-	</header>
-	<main>
-		{{ .Content }}
-        <ul class="grid">
-		{{ range (where .Site.Pages "Section" "portfolio") }}
-			{{ range .Pages }}
-			<li>
-               <a href="{{ .RelPermalink }}">
-                    <h3>{{ .LinkTitle }}</h3>
-                </a>
-               <figure>
-               <a href="{{ .RelPermalink }}">
-                    <img src="img/{{ .Params.title | urlize }}.jpg">
-                </a>
-                <h4>{{ .Params.medium }} · ({{ .Params.jaar	}})</h4>
-                </figure>
-			</li>
-			{{ end }}
-		{{ end }}
-        </ul>
-	</main>
+    <div class="content">
+        <header>
+            {{ partial "header.html" . }}
+        </header>
+        <main>
+            {{ .Content }}
+            <ul class="grid">
+            {{ range (where .Site.Pages "Section" "portfolio") }}
+                {{ range .Pages }}
+                <li>
+                   <a href="{{ .RelPermalink }}">
+                        <h3>{{ .LinkTitle }}</h3>
+                    </a>
+                   <figure>
+                   <a href="{{ .RelPermalink }}">
+                        <img src="img/{{ .Params.title | urlize }}.jpg">
+                    </a>
+                    <h4>{{ .Params.medium }} · ({{ .Params.jaar	}})</h4>
+                    </figure>
+                </li>
+                {{ end }}
+            {{ end }}
+            </ul>
+        </main>
+    </div>
 	<footer>
 		{{ partial "footer.html" . }}
 	</footer>

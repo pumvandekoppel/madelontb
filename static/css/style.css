@@ -226,9 +226,8 @@ main h4 {
 }
 
 footer {
-	height: 6vw;
+	height: auto;
 	border-top: 1px solid #222;
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

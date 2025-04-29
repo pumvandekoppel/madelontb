@@ -9,6 +9,7 @@
 	<header>
 		{{ partial "header.html" . }}
 	</header>
+    <div class="content">
 	<main>
 		{{ .Content }}
 		{{ range (where .Site.Pages "Section" "portfolio") }}
@@ -21,6 +22,7 @@
 		</ul>
 		{{ end }}
 	</main>
+    </div>
 	<footer>
 		{{ partial "footer.html" . }}
 	</footer>
