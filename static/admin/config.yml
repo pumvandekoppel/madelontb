@@ -20,7 +20,7 @@ collections:
       - { label: 'Medium', name: 'medium', widget: 'string' }
       - { label: 'Youtube-Link', name: 'link', widget: 'object', required: false, 
           fields: 
-            - { label: 'Weblink', name: 'weblink', widget: 'text' }
+            - { label: 'Weblink', name: 'weblink', widget: 'text' },
             - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: fale, media_folder: 'thumbnail', public_folder: 'thumbnail' } }
       - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image', choose_url: false, media_folder: 'documentatie', public_folder: 'documentatie' } }
       - { label: 'Fotograaf', name: 'fotograaf', widget: 'text' }
@@ -36,9 +36,13 @@ collections:
         editor: 
           preview: false
         file: '/content/index.md'
-        field:
-          - { label: 'Titel van het werk', name: 'titelvanhetwerk', widget: 'string', hint: 'zorg dat de titel overeenkomt met de titel van het betreffende werk' }
-          - { label: 'Index-fotos', name: 'index-fotos', widget: 'list', field: {label: 'Foto', name: 'foto', widget: 'image', choose_url: false, media_folder: '', public_folder: '' }
+        field: 
+          - { label: 'Index', name: 'index', widget: 'list', field: 
+            - { label: 'Index-link', name: 'index-link', widget: 'object', fields:
+              - { label: 'Index-titel', name: 'index-titel', widget: 'string', hint: 'zorg dat de titel overeenkomt met de titel van het betreffende werk' }
+              - { label: 'Index-foto', name: 'index-fotos', widget: 'image', choose_url: false, media_folder: '', public_folder: '' }
+              }
+            }
       - label: 'Over'
         name: 'over' 
         media_folder: ''
