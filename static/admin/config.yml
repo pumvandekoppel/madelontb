@@ -63,7 +63,7 @@ collections:
         editor:
           preview: false
         file: "_index.md"
-        field:
+        fields:
           - {
               label: "Index",
               name: "index",
