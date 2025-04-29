@@ -18,9 +18,10 @@ collections:
       - { label: 'Titel', name: 'title', widget: 'string' }
       - { label: 'Jaar', name: 'jaar', widget: 'string' }
       - { label: 'Medium', name: 'medium', widget: 'string' }
-      - { label: 'Youtube-Link', name: 'link', widget: 'object', required: false, fields: 
-          - { label: 'Weblink', name: 'weblink', widget: 'text' }
-          - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: fale, media_folder: 'thumbnail', public_folder: 'thumbnail' }
+      - { label: 'Youtube-Link', name: 'link', widget: 'object', required: false, 
+          fields: 
+            - { label: 'Weblink', name: 'weblink', widget: 'text' }
+            - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: fale, media_folder: 'thumbnail', public_folder: 'thumbnail' } }
       - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image', choose_url: false, media_folder: 'documentatie', public_folder: 'documentatie' } }
       - { label: 'Fotograaf', name: 'fotograaf', widget: 'text' }
       - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
