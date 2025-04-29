@@ -78,7 +78,7 @@ collections:
                         label: "Index-foto",
                         name: "index-fotos",
                         widget: "image",
-                        choose_url: false,
+                        choose_url: true,
                         media_folder: "",
                         public_folder: "",
                         hint: "zorg dat de bestandsnaam als volgt is opgedeeld: naam-van-werk.bestandstype"
