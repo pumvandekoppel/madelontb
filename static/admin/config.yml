@@ -73,14 +73,7 @@ collections:
                   label: "Index-link",
                   name: "index-link",
                   widget: "object",
-                  fields:
-                    [
-                      {
-                        label: "Index-titel",
-                        name: "index-titel",
-                        widget: "string",
-                        hint: "zorg dat de titel overeenkomt met de titel van het betreffende werk",
-                      },
+                  field:
                       {
                         label: "Index-foto",
                         name: "index-fotos",
@@ -88,8 +81,9 @@ collections:
                         choose_url: false,
                         media_folder: "",
                         public_folder: "",
-                      },
-                    ],
+                        hint: "zorg dat de bestandsnaam als volgt is opgedeeld: naam-van-werk.bestandstype"
+                      }
+                    ,
                 },
             }
       - label: "Over"
