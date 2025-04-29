@@ -3,7 +3,7 @@ title: Nena
 jaar: "2021"
 medium: installatie
 link: https://www.instagram.com/nena.on.insta
-thumbnail: thumbnail/nena_thumbnail.jpg
+thumbnail: thumbnail/Schermafbeelding 2021-05-30 om 11.36.24.png
 afbeeldingen:
   - _1020280.jpg
   - _1020282.jpg

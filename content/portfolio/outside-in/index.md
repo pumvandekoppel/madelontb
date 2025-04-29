@@ -3,7 +3,7 @@ title: Outside In
 jaar: "2020"
 medium: video
 link: https://youtu.be/QwNF8P6Xprg
-thumbnail: thumbnail/outside-in_thumbnail.png
+thumbnail: thumbnail/outside-in_thumbnail.jpg
 afbeeldingen: []
 ---
 *Outside in* laat een voor deze tijd zeer relevant beeld zien. We zien iemand die buiten in de regen naar binnen staat te kijken. Het roep de vraag op wat zij ziet en of dat voor haar ogen bestemd is. Is zij een indringer?
