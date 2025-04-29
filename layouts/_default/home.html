@@ -1,84 +1,31 @@
-{{ define "main" }}
-{{ .Content }}
-<div id="home">
-	<div id="left-arrow" onclick="previous()">&#8592;</div>
-	<div class="slides">
-		<a href="portfolio/das-ende-des-kapitalismus/">
-			<figcaption>
-				<h1>Das Ende des Kapitalismus (2024)</h1>
-			</figcaption>
-			<figure>
-				<img src="/img/das-ende-des-kapitalismus_clipart.png" alt="">
-			</figure>
-		</a>
-		<a href="portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-3/">
-			<figcaption>
-				<h1>Iedereen is welkom op camping 'T Vrije Veld 3 (2024)</h1>
-			</figcaption>
-			<figure>
-				<img src="/img/iedereen-is-welkom-op-camping-t-vrije-veld-3_clipart.png" alt="">
-			</figure>
-		</a>
-		<a href="portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-2">
-			<figcaption>
-				<h1>Iedereen is welkom op camping 'T Vrije Veld 2 (2023)</h1>
-			</figcaption>
-			<figure>
-				<img src="/img/iedereen-is-welkom-op-camping-t-vrije-veld-2_clipart.png" alt="">
-			</figure>
-		</a>
-		<a href="portfolio/iedereen-is-welkom-op-camping-t-vrije-veld-1">
-			<figcaption>
-				<h1>Iedereen is welkom op camping 'T Vrije Veld 1 (2022)</h1>
-			</figcaption>
-			<figure>
-				<img src="/img/iedereen-is-welkom-op-camping-t-vrije-veld-1_clipart.png" alt="">
-			</figure>
-		</a>
-		<a href="portfolio/ontmoet-mijn-buren/">
-			<figcaption>
-				<h1>Ontmoet mijn buren (2021)</h1>
-			</figcaption>
-			<figure>
-				<img src="/img/ontmoet-mijn-buren_clipart.png" alt="">
-			</figure>
-		</a>
-		<a href="portfolio/langs-het-leven-lopen/">
-			<figcaption>
-				<h1>Langs het leven lopen (2021)</h1>
-			</figcaption>
-			<figure>
-				<img src="/img/langs-het-leven-lopen_clipart.png" alt="">
-			</figure>
-		</a>
-		<a href="portfolio/nena/">
-			<figcaption>
-				<h1>Nena (2021)</h1>
-			</figcaption>
-			<figure>
-				<img src="/img/nena_clipart.png" alt="">
-			</figure>
-		</a>
-		<a href="portfolio/als-niemand-het-ziet/">
-			<figcaption>
-				<h1>Als niemand het ziet (2021)</h1>
-			</figcaption>
-			<figure>
-				<img src="/img/als-niemand-het-ziet_clipart.png" alt="">
-			</figure>
-		</a>
-		<a href="portfolio/outside-in/">
-			<figcaption>
-				<h1>Outside in (2020)</h1>
-			</figcaption>
-			<figure>
-				<img src="/img/outside-in_clipart.png" alt="">
-			</figure>
-		</a>
-	</div>
-	<div id="right-arrow" onclick="next()">&#8594;</div>
-</div>
-<script src="js/slideshow.js">
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+     
+<head>
+	{{ partial "head.html" . }}
+</head>
 
-</script>
-{{ end }}
+<body>
+	<header>
+		{{ partial "header.html" . }}
+	</header>
+	<main>
+		{{ .Content }}
+        <ul class="grid">
+		{{ range (where .Site.Pages "Section" "portfolio") }}
+			{{ range .Pages }}
+			<li>
+                <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</h3><img src="portfolio/{{ .Params.title | urlize }}/{{ .Params.thumbnail }}"></a></h3><h4>{{ .Params.medium }} · ({{ .Params.jaar	}})</h4>
+			</li>
+			{{ end }}
+		{{ end }}
+        </ul>
+	</main>
+	<footer>
+		{{ partial "footer.html" . }}
+	</footer>
+	<!-- Include the script that builds the page and powers Decap CMS -->
+	<!-- script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script-->
+</body>
+
+</html>
