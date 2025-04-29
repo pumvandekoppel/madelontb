@@ -27,4 +27,7 @@ index:
   - index-link:
       index-titel: Outside in
       index-fotos: outside-in_thumbnail.png
+  - index-link:
+      index-titel: test
+      index-fotos: r0001564.jpg
 ---
