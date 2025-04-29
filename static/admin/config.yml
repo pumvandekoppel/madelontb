@@ -4,89 +4,155 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'Madelon ter Borg'
-    label: 'Portfolio'
-    folder: '/content/portfolio/'
-    media_folder: ''
-    public_folder: ''
+  - name: "Madelon ter Borg"
+    label: "Portfolio"
+    folder: "/content/portfolio/"
+    media_folder: ""
+    public_folder: ""
     create: true
-    slug: '{{title}}'
-    path: '{{slug}}/index'
+    slug: "{{title}}"
+    path: "{{slug}}/index"
     editor:
       preview: false
     fields:
-      - { label: 'Titel', name: 'title', widget: 'string' }
-      - { label: 'Jaar', name: 'jaar', widget: 'string' }
-      - { label: 'Medium', name: 'medium', widget: 'string' }
-      - { label: 'Youtube-Link', name: 'link', widget: 'object', required: false, 
-          fields: 
-            - { label: 'Weblink', name: 'weblink', widget: 'text' },
-            - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', choose_url: fale, media_folder: 'thumbnail', public_folder: 'thumbnail' } }
-      - { label: 'Afbeeldingen', name: 'afbeeldingen', widget: 'list', field: {label: 'Afbeelding', name: 'image', widget: 'image', choose_url: false, media_folder: 'documentatie', public_folder: 'documentatie' } }
-      - { label: 'Fotograaf', name: 'fotograaf', widget: 'text' }
-      - { label: 'Omschrijving', name: 'body', widget: 'markdown' }
-  - name: 'Paginas'
-    label: 'paginas'
-    files: 
-      - label: 'Index'
-        name: 'index'
-        media_folder: ''
-        public_folder: ''
-        create: false
-        editor: 
-          preview: false
-        file: '_index.md'
-        field: 
-          - { label: 'Index', name: 'index', widget: 'list', field: { label: 'Index-link', name: 'index-link', widget: 'object', fields:
-              - { label: 'Index-titel', name: 'index-titel', widget: 'string', hint: 'zorg dat de titel overeenkomt met de titel van het betreffende werk' }
-              - { label: 'Index-foto', name: 'index-fotos', widget: 'image', choose_url: false, media_folder: '', public_folder: '' }
-              }
-            }
-      - label: 'Over'
-        name: 'over' 
-        media_folder: ''
-        public_folder: ''
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Jaar", name: "jaar", widget: "string" }
+      - { label: "Medium", name: "medium", widget: "string" }
+      - {
+          label: "Youtube-Link",
+          name: "link",
+          widget: "object",
+          required: false,
+          fields:
+            [
+              { label: "Weblink", name: "weblink", widget: "text" },
+              {
+                label: "Thumbnail",
+                name: "thumbnail",
+                widget: "image",
+                choose_url: fale,
+                media_folder: "thumbnail",
+                public_folder: "thumbnail",
+              },
+            ],
+        }
+      - {
+          label: "Afbeeldingen",
+          name: "afbeeldingen",
+          widget: "list",
+          field:
+            {
+              label: "Afbeelding",
+              name: "image",
+              widget: "image",
+              choose_url: false,
+              media_folder: "documentatie",
+              public_folder: "documentatie",
+            },
+        }
+      - { label: "Fotograaf", name: "fotograaf", widget: "text" }
+      - { label: "Omschrijving", name: "body", widget: "markdown" }
+  - name: "Paginas"
+    label: "paginas"
+    files:
+      - label: "Index"
+        name: "index"
+        media_folder: ""
+        public_folder: ""
         create: false
         editor:
           preview: false
-        file: '/content/over-madelon.md'
-        fields: 
-          - { label: 'Portret', name: 'image', widget: 'image', choose_url: false }
-          - { label: 'Artist Statement', name: 'body', widget: 'markdown' }
-          - label: 'Opleidingen'
-            name: 'opleidingen' 
-            widget: 'list'
-            field: 
-              label: 'Studie'
-              name: 'studie'
-              widget: 'object' 
+        file: "_index.md"
+        field:
+          - {
+              label: "Index",
+              name: "index",
+              widget: "list",
+              field:
+                {
+                  label: "Index-link",
+                  name: "index-link",
+                  widget: "object",
+                  fields:
+                    [
+                      {
+                        label: "Index-titel",
+                        name: "index-titel",
+                        widget: "string",
+                        hint: "zorg dat de titel overeenkomt met de titel van het betreffende werk",
+                      },
+                      {
+                        label: "Index-foto",
+                        name: "index-fotos",
+                        widget: "image",
+                        choose_url: false,
+                        media_folder: "",
+                        public_folder: "",
+                      },
+                    ],
+                },
+            }
+      - label: "Over"
+        name: "over"
+        media_folder: ""
+        public_folder: ""
+        create: false
+        editor:
+          preview: false
+        file: "/content/over-madelon.md"
+        fields:
+          - {
+              label: "Portret",
+              name: "image",
+              widget: "image",
+              choose_url: false,
+            }
+          - { label: "Artist Statement", name: "body", widget: "markdown" }
+          - label: "Opleidingen"
+            name: "opleidingen"
+            widget: "list"
+            field:
+              label: "Studie"
+              name: "studie"
+              widget: "object"
               fields:
-                - { label: 'Opleiding', name: 'opleiding', widget: 'text' }
-                - { label: 'Instituut', name: 'plek', widget: 'text' }
-                - { label: 'Afstudeerdata', name: 'afstudeerdata', widget: 'text' }  
-          - label: 'Zichtbaarheid'
-            name: 'zichtbaarheid' 
-            widget: 'list'
-            field: 
-              label: 'Tentoonstelling'
-              name: 'tentoonstelling'
-              widget: 'object'
+                - { label: "Opleiding", name: "opleiding", widget: "text" }
+                - { label: "Instituut", name: "plek", widget: "text" }
+                - {
+                    label: "Afstudeerdata",
+                    name: "afstudeerdata",
+                    widget: "text",
+                  }
+          - label: "Zichtbaarheid"
+            name: "zichtbaarheid"
+            widget: "list"
+            field:
+              label: "Tentoonstelling"
+              name: "tentoonstelling"
+              widget: "object"
               fields:
-                - { label: 'Naam', name: 'naam', widget: 'text' }
-                - { label: 'Tentoonstellingsruimte', name: 'tentoonstellingsruimte', widget: 'text' }
-                - { label: 'Tentoonstellingsdata', name: 'tentoonstellingsdata', widget: 'text' } 
-                - { label: 'Soort', name: 'soort', widget: 'text' }
-          - label: 'Overig'
-            name: 'overig' 
+                - { label: "Naam", name: "naam", widget: "text" }
+                - {
+                    label: "Tentoonstellingsruimte",
+                    name: "tentoonstellingsruimte",
+                    widget: "text",
+                  }
+                - {
+                    label: "Tentoonstellingsdata",
+                    name: "tentoonstellingsdata",
+                    widget: "text",
+                  }
+                - { label: "Soort", name: "soort", widget: "text" }
+          - label: "Overig"
+            name: "overig"
             required: false
-            widget: 'list'
-            field: 
-              label: 'Engagement'
-              name: 'engagement'
+            widget: "list"
+            field:
+              label: "Engagement"
+              name: "engagement"
               widget: object'
-              fields: 
-                - { label: 'Wat', name: 'wat', widget: 'text' }
-                - { label: 'Plek', name: 'plek', widget: 'text' }
-                - { label: 'Data', name: 'data', widget: 'text' } 
-          - { label: 'Email', name: 'email', widget: 'text' }
-
+              fields:
+                - { label: "Wat", name: "wat", widget: "text" }
+                - { label: "Plek", name: "plek", widget: "text" }
+                - { label: "Data", name: "data", widget: "text" }
+          - { label: "Email", name: "email", widget: "text" }
