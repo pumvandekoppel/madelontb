@@ -1,7 +1,7 @@
 ---
 title: Langs het leven lopen
 jaar: "2021"
-medium: video (5'29'')
+medium: video
 link: https://youtu.be/PtGJ-nRCqAQ
 thumbnail: thumbnail/langs-het-leven-lopen_thumbnail.png
 afbeeldingen: []
