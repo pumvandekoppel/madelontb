@@ -70,20 +70,13 @@ collections:
               widget: "list",
               field:
                 {
-                  label: "Index-link",
-                  name: "indexlink",
-                  widget: "object",
-                  field:
-                      {
-                        label: "Index-foto",
-                        name: "indexfoto",
-                        widget: "image",
-                        choose_url: true,
-                        media_folder: "static/img",
-                        public_folder: "/img",
-                        hint: "zorg dat de bestandsnaam als volgt is opgedeeld: naam-van-werk.jpg"
-                      }
-                    ,
+                      label: "Index-foto",
+                      name: "indexfoto",
+                      widget: "image",
+                      choose_url: true,
+                      media_folder: "static/img",
+                      public_folder: "/img",
+                      hint: "zorg dat de bestandsnaam als volgt is opgedeeld: naam-van-werk.jpg"
                 },
             }
       - label: "Over"
