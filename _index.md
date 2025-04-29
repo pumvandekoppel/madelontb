@@ -1,3 +1,12 @@
 ---
-index: []
+index:
+  - /img/als-niemand-het-ziet.jpg
+  - /img/das-ende-des-kapitalismus.jpg
+  - /img/iedereen-is-welkom-op-camping-t-vrije-veld-1.jpg
+  - /img/iedereen-is-welkom-op-camping-t-vrije-veld-2.jpg
+  - /img/iedereen-is-welkom-op-camping-t-vrije-veld-3.jpg
+  - /img/langs-het-leven-lopen.jpg
+  - /img/nena.jpg
+  - /img/ontmoet-mijn-buren.jpg
+  - /img/outside-in.jpg
 ---
