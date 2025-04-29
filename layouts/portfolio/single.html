@@ -14,7 +14,7 @@
         <h4>-&ensp;{{ .Params.medium }}</h4></div>
 		<p>{{ .Content }}</p>
 		<ul class="documentation">
-			{{ range .Resources.Match "./documentatie*" }}
+			{{ range .Resources.Match "documentatie*" }}
                     <a href="{{ .RelPermalink }}" class="documentation-item">
                         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
                     </a>
