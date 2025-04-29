@@ -71,12 +71,12 @@ collections:
               field:
                 {
                   label: "Index-link",
-                  name: "index-link",
+                  name: "indexlink",
                   widget: "object",
                   field:
                       {
                         label: "Index-foto",
-                        name: "index-foto",
+                        name: "indexfoto",
                         widget: "image",
                         choose_url: true,
                         media_folder: "",
