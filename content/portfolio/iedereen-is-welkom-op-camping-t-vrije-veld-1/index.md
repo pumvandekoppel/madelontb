@@ -4,12 +4,11 @@ jaar: "2022"
 medium: installatie
 link: |
   https://youtu.be/HxcUWTG50pA
-thumbnail: thumbnail/iedereen-is-welkom-op-camping-t-vrije-veld-1_thumbnail.jpg
+thumbnail:
 afbeeldingen:
   - documentatie/20220704hroig_thehaguedocu206918.jpg
   - documentatie/20220704hroig_thehaguedocu208121.jpg
   - documentatie/20220704hroig_thehaguedocu210122.jpg
-  - documentatie/schermafbeelding-2022-07-07-om-15.22.52.png
   - documentatie/20220703hroig_thehaguedocu146410.jpg
   - documentatie/20220704hroig_thehaguedocu212327.jpg
 fotograaf: Helena Roig Prats

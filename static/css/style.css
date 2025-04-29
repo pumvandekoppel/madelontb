@@ -186,6 +186,10 @@ svg:hover #play-svg{
   fill: #CC181E;
 }
 
+small#fotograaf {
+    font-size: .95em;
+}
+
 div#home {
 	display: flex;
 	flex-direction: row;
