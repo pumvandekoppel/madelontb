@@ -79,8 +79,8 @@ collections:
                         name: "indexfoto",
                         widget: "image",
                         choose_url: true,
-                        media_folder: "",
-                        public_folder: "",
+                        media_folder: "../../..",
+                        public_folder: "../../..",
                         hint: "zorg dat de bestandsnaam als volgt is opgedeeld: naam-van-werk.jpg"
                       }
                     ,
