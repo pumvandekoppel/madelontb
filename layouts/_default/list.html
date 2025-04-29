@@ -6,21 +6,25 @@
 </head>
 
 <body>
+    <div class="content">
 	<header>
 		{{ partial "header.html" . }}
 	</header>
-    <div class="content">
 	<main>
 		{{ .Content }}
-		{{ range (where .Site.Pages "Section" "portfolio") }}
 		<ul>
-			{{ range .Pages }}
+            {{ range .Pages.GroupByParam "medium" }}
+             <h2 id="key">{{ .Key | title }}</h2>
+            {{ range (.Pages.ByParam "jaar").Reverse }}
 			<li>
-				<h1><a href="{{ .RelPermalink }}">{{ .LinkTitle }} ({{ .Params.jaar	}}) - {{ .Params.medium }}</a></h1>
+                <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }} ({{ .Params.jaar	}})</a></h2>
 			</li>
-			{{ end }}
+            {{ end }} 
+            {{ end }}
 		</ul>
-		{{ end }}
+
+
+
 	</main>
     </div>
 	<footer>
