@@ -30,7 +30,7 @@ collections:
                 label: "Thumbnail",
                 name: "thumbnail",
                 widget: "image",
-                choose_url: fale,
+                choose_url: false,
                 media_folder: "thumbnail",
                 public_folder: "thumbnail",
               },

@@ -4,7 +4,7 @@ jaar: "2022"
 medium: installatie
 link: |
   https://youtu.be/HxcUWTG50pA
-thumbnail: Schermafbeelding 2022-07-07 om 15.22.52.jpg
+thumbnail: thumbnail/Schermafbeelding 2022-07-07 om 15.22.52.jpg
 afbeeldingen:
   - documentatie/20220704hroig_thehaguedocu206918.jpg
   - documentatie/20220704hroig_thehaguedocu208121.jpg
