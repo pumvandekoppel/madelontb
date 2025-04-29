@@ -121,7 +121,17 @@ div#work-specs>* {
 	transform: scale(1.02);
 }
 
+a#youtube-link {
+    position: relative;
+}
 
+a#youtube-link .play-icon {
+    cursor: pointer;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+}
 
 div#home {
 	display: flex;
