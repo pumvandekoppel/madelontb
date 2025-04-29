@@ -128,9 +128,13 @@ a#youtube-link {
 a#youtube-link .play-icon {
     cursor: pointer;
     position: absolute;
-    top : 50%;
+    top : -447%;
     left : 50%;
     transform: translate(-50%, -50%);
+}
+
+svg:hover #play-svg{
+  fill: #CC181E;
 }
 
 div#home {
