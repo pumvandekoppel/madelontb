@@ -76,7 +76,7 @@ collections:
                   field:
                       {
                         label: "Index-foto",
-                        name: "index-fotos",
+                        name: "index-foto",
                         widget: "image",
                         choose_url: true,
                         media_folder: "",
