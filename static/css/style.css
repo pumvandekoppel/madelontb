@@ -235,6 +235,8 @@ footer {
 
 footer small {
 	font-size: 0.95em;
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 
 h2,
