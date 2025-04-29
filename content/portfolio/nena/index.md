@@ -1,7 +1,7 @@
 ---
 title: Nena
 jaar: "2021"
-medium: Installatie en instagram account
+medium: installatie
 link: https://www.instagram.com/nena.on.insta
 thumbnail: thumbnail/nena_thumbnail.jpg
 afbeeldingen:
