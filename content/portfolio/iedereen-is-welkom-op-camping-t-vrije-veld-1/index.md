@@ -4,7 +4,7 @@ jaar: "2022"
 medium: installatie
 link: |
   https://youtu.be/HxcUWTG50pA
-thumbnail:
+thumbnail: null
 afbeeldingen:
   - documentatie/20220704hroig_thehaguedocu206918.jpg
   - documentatie/20220704hroig_thehaguedocu208121.jpg
