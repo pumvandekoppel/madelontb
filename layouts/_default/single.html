@@ -14,12 +14,10 @@
 		<div id="kunstenaar">
 			<div class="gallery">
 				<h1>{{ .Params.title }}</h1>
-				{{ range .Parent.Resources.ByType "image" }}
-				{{ with .Resize "250x" }}
-				<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-				{{ end }}
-				{{ end }}
-				<h3><a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></h3>
+                {{ range .Parent.Resources.ByType "image" }}
+                <img src="{{ .RelPermalink }}">
+                {{ end }}
+                <h3><a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></h3>
 			</div>
 			<section>
 				<p>{{ .Content }}
@@ -27,30 +25,46 @@
 		</div>
 		<div id="cv">
 
-			<h1>C.V.</h1>
-			<div>
-				<h2>Opleidingen</h2>
-				{{ range .Page.Params.opleidingen }}
-	    			<p>{{ .studie.afstudeerdata }} - <em>{{ .studie.opleiding }}</em>, {{ .studie.plek }}</p>
-				{{ end }}
-			</div>
-			<div>
-				<h2>Exposities</h2>
-				{{ range .Page.Params.zichtbaarheid }}
-    				<p>{{ .tentoonstelling.tentoonstellingsdata }} <small>{{ .tentoonstelling.soort }}</small> - <em>{{ .tentoonstelling.naam }}</em>, {{ .tentoonstelling.tentoonstellingsruimte }}</p>
-				{{ end }}
-			</div>
-			<div>
-				<h2>Overig</h2>
-				{{ range .Page.Params.overig }}
-				<p>{{ .engagement.data }} - <em>{{ .engagement.wat }}</em>, {{ .engagement.plek }}</p>
-				{{ end }}
-			</div>
+            <section>
+                <div>
+                    <h1>C.V.</h1>
+                    <h2>Opleidingen</h2>
+                </div>
+                {{ range .Page.Params.opleidingen }}
+                <div>
+                    <p>{{ .studie.afstudeerdata }}</p>
+                    <p><em>{{ .studie.opleiding }}</em>, {{ .studie.plek }}</p>
+                </div>
+                {{ end }}
+                <div>
+                    <h2 class="hide-on-mobile">———</h2>
+                    <h2>Exposities</h2>
+                </div>
+                {{ range .Page.Params.zichtbaarheid }}
+                <div>
+                    <p>{{ .tentoonstelling.tentoonstellingsdata }}</p>
+                    <p><em>{{ .tentoonstelling.naam }}</em>, {{ .tentoonstelling.tentoonstellingsruimte }}</p>
+                </div>
+                {{ end }}
+                {{ if isset .Page.Params "overig" }}
+                <div>
+                     <h2 class="hide-on-mobile">———</h2>
+                     <h2>Overig</h2>
+                </div>
+                {{ range .Page.Params.overig }}
+                <div>
+                    <p>{{ .engagement.data }}</p>
+                    <p><em>{{ .engagement.wat }}</em>, {{ .engagement.plek }}</p>
+                </div>
+                {{ end }}
+                {{ end }}
+                </div>
+            </section>
 		</div>
 	</main>
     </div>
-	<footer style="display: flex; justify-content: space-between;">
-		<small><a href="mailto:madelonterborg@gmail.com">madelonterborg@gmail.com</a>&ensp;|&ensp;Copyright {{
+	<footer>
+        <small><a href="mailto:madelonterborg@gmail.com">madelonterborg@gmail.com</a>&ensp;<span class="hide-on-mobile">|</span>&ensp;Copyright {{
 			now.Year
 			}}.</small>
 		<small id="reclame">website door <a href="https://pumvandekoppel.nl">Pum van de koppel</a></small>

@@ -26,7 +26,9 @@
             </div></a>
             {{ end }}
             </ul> 
+            {{ if isset .Params "fotograaf" }}
             <small id="fotograaf">Foto's door {{ .Params.fotograaf }}</small>
+            {{ end }}
             <br><br>
         </main>
     </div>

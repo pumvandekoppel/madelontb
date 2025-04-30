@@ -247,6 +247,10 @@ footer small {
     padding-bottom: 21px;
 }
 
+footer small a:hover {
+    text-shadow: 1px 0 #0000cd; 
+}
+
 h2,
 h3,
 h4,
@@ -277,6 +281,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+    margin-bottom: 4vh;
 }
 
 header h1 a {
@@ -318,17 +323,56 @@ p {
 	font-family: "Roboto Mono";
 }
 
-.over-madelon main div#kunstenaar {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	gap: 9vw;
+main {
+    margin-bottom: 4vh;
 }
 
-.over-madelon documentation {
+.over-madelon main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.over-madelon main div#kunstenaar {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	gap: 9vw;
+    align-items: stretch;
+    margin-top: 4vh;
+    margin-bottom: 7vh;
+}
+
+.over-madelon main div#kunstenaar div.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.over-madelon main div#kunstenaar div.gallery h1 {
+    margin: 0;
+}
+
+.over-madelon main div#kunstenaar div.gallery img  {
+    height: 300px;
+    width: auto;
+}
+
+.over-madelon div#cv section {
+    width: calc(95vw - 9vw);
+    margin-bottom: 9vw;
+}
+
+.over-madelon div#cv section > div {
+	display: flex;
 	justify-content: space-between;
+}
+
+.over-madelon div#cv div > div, .over-madelon div#cv aside > div {
+    width: 100%;
+}
+
+.over-madelon div#cv section > div > p {
+    text-align: right;
 }
 
 /* Responsive adjustments */
@@ -342,9 +386,39 @@ p {
 	div#work-specs {
 		display: block;
 	}
+
+ul.grid {
+        grid-gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .over-madelon div#kunstenaar img {
+        margin-top: 100%;
+    }
+
+
+    .over-madelon div#cv section > div {
+        display: block;
+    }
+
+    .over-madelon div#cv section > div > p {
+        text-align: left;
+    }    
 }
 
+
 @media (max-width: 576px) {
+
+    body {
+        margin-left: 14px;
+        margin-right: 14px;
+
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
 	header {
 		display: block;
 		height: 9em;
@@ -364,9 +438,35 @@ p {
 		padding-bottom: 0;
 	}
 
+    ul.grid {
+        grid-gap: 8px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+
+    div#kunstenaar {
+        display: block !important;
+    }
+
+    .over-madelon main {
+        align-content: center;
+    }        
+
+.over-madelon main div#kunstenaar div.gallery img  {
+    margin: 14px;
+    flex: 0;
+    width: 65%;
+}
+
+
 	.documentation {
 		column-count: 1;
 	}
+
+    footer {
+        display: block;
+        padding: 7px;
+    }
 }
 
 #lightbox {
