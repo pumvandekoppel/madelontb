@@ -76,10 +76,6 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-h3 > a:hover {
-    text-shadow: 1px 0 #0000cd; 
-}
-
 ul.grid {
     display: grid;
     grid-gap: 8px;
@@ -98,11 +94,13 @@ ul.grid li {
   }
 
 ul.grid li a {
+    color: black;
     flex-shrink: 1;
     display: inline-block;
 }
 
 ul.grid li:hover > a h3 {   
+    color: #0000cd;
     text-shadow: 1px 0 #0000cd; 
 }
 
@@ -364,15 +362,12 @@ main {
 
 .over-madelon div#cv section > div {
 	display: flex;
-	justify-content: space-between;
 }
 
-.over-madelon div#cv div > div, .over-madelon div#cv aside > div {
-    width: 100%;
-}
-
-.over-madelon div#cv section > div > p {
-    text-align: right;
+.over-madelon div#cv section > div > * {
+    flex-grow: 1;
+	max-width: 50%;
+	wrap: 1;
 }
 
 /* Responsive adjustments */
