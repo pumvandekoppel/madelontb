@@ -1,4 +1,4 @@
-baseURL = 'https://madelonterborg.nl'
+baseURL = 'https://madelonterborg.netlify.app/'
 languageCode = 'nl-nl'
 title = 'Madelon ter Borg'
 theme = 'simpel'
